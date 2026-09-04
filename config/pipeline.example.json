@@ -1,0 +1,22 @@
+{
+  "checkpoint_path": "../model/checkpoints/classifier",
+  "stages": {
+    "collect": {
+      "command": ["{python}", "crawler/run_tool.py"],
+      "cwd": "..",
+      "outputs": ["../data/raw/papers.jsonl"]
+    },
+    "clean": {
+      "command": ["{python}", "preprocess/run_tool.py"],
+      "cwd": "..",
+      "outputs": ["../data/train.jsonl", "../data/val.jsonl", "../data/test.jsonl", "../labels.json"]
+    },
+    "train": {
+      "command": ["{python}", "model/train_tool.py"],
+      "cwd": "..",
+      "outputs": ["../model/checkpoints/classifier", "../results/metrics.json"],
+      "timeout_seconds": 14400
+    }
+  }
+}
+

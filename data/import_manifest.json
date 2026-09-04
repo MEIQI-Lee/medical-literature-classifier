@@ -1,0 +1,1237 @@
+{
+  "sources": [
+    {
+      "folder": "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw",
+      "category_files": 128,
+      "rows": 6379,
+      "csv_matches_jsonl": true
+    },
+    {
+      "folder": "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw",
+      "category_files": 22,
+      "rows": 1100,
+      "csv_matches_jsonl": null
+    },
+    {
+      "folder": "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw",
+      "category_files": 21,
+      "rows": 1050,
+      "csv_matches_jsonl": null
+    }
+  ],
+  "identical_category_files_skipped": 43,
+  "backup_directory": "E:\\academic-classification-agent\\data\\archive\\import_20260903T113422066883Z",
+  "backup_status": "deleted_at_user_request",
+  "replaced_files": [
+    "R52.jsonl",
+    "cnki_papers.csv"
+  ],
+  "imported_category_count": 128,
+  "imported_jsonl_rows": 6379,
+  "files": [
+    {
+      "file": "R-01.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R-01.jsonl"
+      ],
+      "sha256": "e12f5efdb8bdfa49b84f4a4123b1d551f40356070bf44391d7171301882dd450",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R-02.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R-02.jsonl"
+      ],
+      "sha256": "3d70ed48b766b553d4a1a496f6a6feec029f6699bcacd54698591034e98ce04a",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R-05.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R-05.jsonl"
+      ],
+      "sha256": "431ba2fdb591b891a8f13c420af780848bc8ecf10dfc5df47d7991d0fb6ca677",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R-09.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R-09.jsonl"
+      ],
+      "sha256": "5cec809eaaa616b1453e9a5a754c00620e4473c787cddf45da537607c9468112",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R-33.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R-33.jsonl"
+      ],
+      "sha256": "9f190d2935aa53a3affcc4e2dbf4998f01053427aebb113c1b508e21fb7db9de",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R11.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R11.jsonl"
+      ],
+      "sha256": "7025ad294cd23c4014634269414dba1452fc20dbd793ca0740ee54d267a57835",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R12.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R12.jsonl"
+      ],
+      "sha256": "34149ee4620bf26f354a4d50e3fdc93eaec27b1687000da1a10b943cb78abab1",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R13.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R13.jsonl"
+      ],
+      "sha256": "c54f3983712a866b68a41aa738a4efc63c548c0c2062dc01215c66a0beca01c2",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R14.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R14.jsonl"
+      ],
+      "sha256": "ea7c0c855ddfb23cfebf5d431582949ee8804a92f1098d8590f264a9dcc4f1cb",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R15.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R15.jsonl"
+      ],
+      "sha256": "25a14b570a55ec68c4fa8f6a18c6f6eb8bfa8da340dbda064b03614d321f25bf",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R16.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R16.jsonl"
+      ],
+      "sha256": "8472b17cfe23dcecac122581d0cc26061d3d2b03b4066231cf1e072709051b97",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R169.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R169.jsonl"
+      ],
+      "sha256": "0cf6ef40097b548ec7e55e7b0b9e042e6a2345c978c1238b812037ea3a3e34bf",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R17.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R17.jsonl"
+      ],
+      "sha256": "bfe1110e1486ebadd04448b39b78b9075899783e9227e323a4abfd48359bd4a1",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R179.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R179.jsonl"
+      ],
+      "sha256": "00d8b5a65f8d132d6994b175bed0daf9df17172e7aa24b63e0444aa37f2fd2b2",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R18.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R18.jsonl"
+      ],
+      "sha256": "7dd87212f7f4319c7d294ad310e7b1e4effae2d16d72348247724677a742a3a6",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R19.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R19.jsonl"
+      ],
+      "sha256": "3ded6e1e85ba6c8b44c853642ff8031730e97dc81bf6b26bca767e4b6dcb221a",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R2-0.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R2-0.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R2-0.jsonl"
+      ],
+      "sha256": "bb3e74addda47e4b7ca417554507266dfda28ab1df80bd348e22ffdf92979fa8",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R2-5.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R2-5.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R2-5.jsonl"
+      ],
+      "sha256": "e62bfac63a08385caf25c177a0c70d7cf0a2caa5b9701701e243b4848bb60ea8",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R21.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R21.jsonl"
+      ],
+      "sha256": "147e39267347e1c31493459409472e0947549a83744eb24e509797634406e056",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R22.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R22.jsonl"
+      ],
+      "sha256": "4f3502ee62e0e3690a039c8a9d7fffeacb8893645254a2a843c5172f5fc98c35",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R24.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R24.jsonl"
+      ],
+      "sha256": "09de03bb397bff6dc13da3643e7eb2ab1db50ccba29dd12bc675b94d8d62bcfb",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R25.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R25.jsonl"
+      ],
+      "sha256": "98f7bbb93fd31d15855ef8a9bfe9140261adb60491bb2d07988899d7044251ff",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R26.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R26.jsonl"
+      ],
+      "sha256": "0a3e3067a4c5a805d2ff1f1b0b33f28795d8683b0493d8e078126d49b2227a6c",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R271.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R271.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R271.jsonl"
+      ],
+      "sha256": "f3f5ae627412d415cb6e35585f1b452d7ae941bd45dac5c6f84ddfa48a5f53b5",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R272.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R272.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R272.jsonl"
+      ],
+      "sha256": "da2d0c08cc5c34fc26ed91fa7f58110d2ef0ff5872974a485f9d69b8a48a781b",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R273.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R273.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R273.jsonl"
+      ],
+      "sha256": "6d928c43e31e0e99239832e6b586bc93026613df18ec7e54243b2722d5d42320",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R274.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R274.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R274.jsonl"
+      ],
+      "sha256": "e88aa3992c807e168ef1e907c11bb759a67bfae0e31eabf9490ff6cbe02586ff",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R275.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R275.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R275.jsonl"
+      ],
+      "sha256": "cdffb837db31181f662492e059d3011c11f665b21b0992f4e7b0338d86f0006e",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R276.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R276.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R276.jsonl"
+      ],
+      "sha256": "5c810ea4d79ea41db819b9494a1ba730d1a99fb3cc369b38180afc290e8a1144",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R277.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R277.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R277.jsonl"
+      ],
+      "sha256": "50fac4aafdfaa776630b1ff9f93ce7a59366565afeb8fd2a62a19f2608b99895",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R278.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R278.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R278.jsonl"
+      ],
+      "sha256": "cedaa4f260afbe0104bbe6c973fd66b2a8435ddfff57790a944fd98fe36b54fa",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R28.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R28.jsonl"
+      ],
+      "sha256": "c63182a6fac479db5313e4335e143900d394ee32c900077f263f4726f7653b3b",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R289.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R289.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R289.jsonl"
+      ],
+      "sha256": "c6fad4e92be5f6c6ff3b825eac6fdae83887ead78b8d6e0f1695779b4514ca1f",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R29.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R29.jsonl"
+      ],
+      "sha256": "f0564f5ed3edf675ed8b1e353801ed171860ab6237768411ec34ef9fc9f51457",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R31.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R31.jsonl"
+      ],
+      "sha256": "383165a47d3da9a564d1e87d38e79732e4dbd915a500d2cc299d6b593f54c491",
+      "rows": 29,
+      "action": "added"
+    },
+    {
+      "file": "R32.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R32.jsonl"
+      ],
+      "sha256": "866e5f619e218de97006202d62c1a1db19597330fd2ba1e82c3d85de15ec753e",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R33.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R33.jsonl"
+      ],
+      "sha256": "09bdde7a91e1db9afea9616ee6f96fcecb9e034c68c00db827ec60ad19f3ba34",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R36.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R36.jsonl"
+      ],
+      "sha256": "3bcbf8169cef582bf002fd451ae2f73d0edfed86104dadcafaedb0bb6a2073eb",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R37.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R37.jsonl"
+      ],
+      "sha256": "de2f0555383e2f1b9ac0ab57c15160efd235848d550a02ee50983036ee7d23b6",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R38.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R38.jsonl"
+      ],
+      "sha256": "a7b5a8ff93657cdd4b84576a16a58666e1cec524a49b6392e18dcbadb847ac6e",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R392.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R392.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R392.jsonl"
+      ],
+      "sha256": "3ff9bd73a7e94f88b2bbe33c8c6eb4923dfce9a4211f5bf297a28b12781bf303",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R394.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R394.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R394.jsonl"
+      ],
+      "sha256": "e6ffabd39a55cf8f49905295d423f18a4fd3d33b84401a15d47524fcd2c3d106",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R395.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R395.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R395.jsonl"
+      ],
+      "sha256": "ff7f9569317658feb8e198d52a5644643203f3c9ddd118aef6b6bb84f647a04a",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R44.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R44.jsonl"
+      ],
+      "sha256": "3fbac78595666038756b4f6a19b77ede064b84d636db5fcde630d172f8734e22",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R45.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R45.jsonl"
+      ],
+      "sha256": "b7a07988edc197b244cd6ef179dc4b6ecda48f2887afbb71f8186c5da2e5711f",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R47.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R47.jsonl"
+      ],
+      "sha256": "efc7d06ab593c0cf72ec2583d642da1ccb973f702804246db3ac09bbad1f5df8",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R48.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R48.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R48.jsonl"
+      ],
+      "sha256": "d2b15e8f3bf64d79df41b3b736c3e0159600478361c763d6fcf5549f1ff65f4b",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R49.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R49.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R49.jsonl"
+      ],
+      "sha256": "eeeca790803899c006796dfe37ce6c371e890bda5cd192dbdc5c3bce624822fc",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R51.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R51.jsonl"
+      ],
+      "sha256": "742f47c126e6774be31d3ee630285e0cfd4c6430c02e7b55dc7de9099c2f6c91",
+      "rows": 50,
+      "action": "unchanged"
+    },
+    {
+      "file": "R52.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R52.jsonl"
+      ],
+      "sha256": "8aa251c0db504171bc2a70a2fc62fb35ace437e173c5289ba65deeca41264633",
+      "rows": 50,
+      "action": "replaced_with_backup"
+    },
+    {
+      "file": "R53.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R53.jsonl"
+      ],
+      "sha256": "9f0dabe9a258b79b03b2cb89ef161745a76877a232a46c81ea7290c0d4338567",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R54.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R54.jsonl"
+      ],
+      "sha256": "9012ce77c5bc11160c14efa304989beca59e670ebd6f06da4ec52fb4cebb0a83",
+      "rows": 50,
+      "action": "unchanged"
+    },
+    {
+      "file": "R55.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R55.jsonl"
+      ],
+      "sha256": "50b54e50295c5fe4c3422395309418b8648098be132eb9f3751da8aa9d860f50",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R56.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R56.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R56.jsonl"
+      ],
+      "sha256": "fcd76ee629a5c58b6e86a525716830b14cc108582d7fbfcf431bf4041026b5dc",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R57.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R57.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R57.jsonl"
+      ],
+      "sha256": "1499a7c49fa73b1da77fcc8534ac99278bdfd26be2749ed169bc93ce34f38fdd",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R58.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R58.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R58.jsonl"
+      ],
+      "sha256": "c2668a4469bcc4df6e9f8e1772ba380b54c927756bb457675e205bb025babfc5",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R59.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R59.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R59.jsonl"
+      ],
+      "sha256": "b2f30a2820f72a351f4e94e61539e17c7b6d3d77c027b8d862fd06249bee5b40",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R599.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R599.jsonl"
+      ],
+      "sha256": "600b9be67186fc76a1023faa6f64bafc4aab4d6bd1ebeeaa8a856d96126f92ec",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R602.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R602.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R602.jsonl"
+      ],
+      "sha256": "ffec77541c867bdb6c861295abcd5e389ca5a6779d110c38bc8d25acdc31e885",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R604.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R604.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R604.jsonl"
+      ],
+      "sha256": "97d1961ec2f88bf86adb93b123ccf4dc70eca9e1780fdef72266d12d4dbc1aae",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R605.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R605.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R605.jsonl"
+      ],
+      "sha256": "7aef522e4c1100fbeda83023997dc5c8cf771955fc807feb7334123f4065ffa5",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R608.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R608.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R608.jsonl"
+      ],
+      "sha256": "8e86e74cb45242d26c7d89217c07f8d5fca0cf30c58b018c1614b4dcd24fae17",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R61.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R61.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R61.jsonl"
+      ],
+      "sha256": "a882f683af4902de2589bf6f21b348a390baea6f8d3c5fd3d766e20cc7c2d122",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R62.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R62.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R62.jsonl"
+      ],
+      "sha256": "4ed48b4db9ef0cedfb5d5588ddbd15e27f0b6ee56b306ffe0144e625ae529fc4",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R63.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R63.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R63.jsonl"
+      ],
+      "sha256": "d497d883a43f0ea31187dff086bb6ce16bd3f2259bf4e65b45699f7ddc9a4194",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R64.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R64.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R64.jsonl"
+      ],
+      "sha256": "f3c58e617b7cef5eee684cfd3f775266606528f9d3868fcc12ae10b7192b27b3",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R65.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R65.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R65.jsonl"
+      ],
+      "sha256": "d2351746418672d1ed226d67a5d0776774d9553bea6e968d89a85fc8478a8232",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R68.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R68.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R68.jsonl"
+      ],
+      "sha256": "d0f928f4bdaa1511a996240898b1b06b18ca578067013a6666818a8529bca52c",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R69.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R69.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw2\\raw\\R69.jsonl"
+      ],
+      "sha256": "f1680922e19ee62b1853848cfa2ccca8233dc0f8c73352cb941a368d29353598",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R711.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R711.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R711.jsonl"
+      ],
+      "sha256": "07597b72260cb6c087e1f9cc568ea05b5b6813243ada70e6e174a9c79dee0cda",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R713.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R713.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R713.jsonl"
+      ],
+      "sha256": "003277c05766ae790b66514d7cae6888272f0e74de8fdde51347b013ae27b903",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R714.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R714.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R714.jsonl"
+      ],
+      "sha256": "db846534d1af0304832aa4e1f7a8656f0731b24b2cd8b3387b422dc089c755f7",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R715.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R715.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R715.jsonl"
+      ],
+      "sha256": "c766535436cbfd1c1efec6f1464ecd30ccbb3c5142eb900045c49f7fe399fb26",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R717.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R717.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R717.jsonl"
+      ],
+      "sha256": "fcf63631cd32518ea98ab0c594cba24fcf217a491d9d2bb3836f6ae33455a475",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R719.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R719.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R719.jsonl"
+      ],
+      "sha256": "39d407f1f8850737f96c7d4cc1ade07031d52ab3bf85878eb3a5f90e78ca03b1",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R722.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R722.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R722.jsonl"
+      ],
+      "sha256": "34ae5453a017758a49b1630c539d542a84335a34dd512e9a800770c8ff8de826",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R723.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R723.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R723.jsonl"
+      ],
+      "sha256": "f906b4d3e6500ad2820859f3a5b1d4b24d556531e7472ff0de50772a0acafe09",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R725.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R725.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R725.jsonl"
+      ],
+      "sha256": "3174b2586692e321b62967e4705f0d7a7e459682e0f7b2ed5df3f484ed562139",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R726.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R726.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R726.jsonl"
+      ],
+      "sha256": "6163a22a4ac733c24a5afeb956961ac6d3e6a903b14d9b7640b8590287c62812",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R729.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R729.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R729.jsonl"
+      ],
+      "sha256": "2e751484ba717bd03d4e93f56b1b8573aa36f7b61d2356fa730330bdca15ba74",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R73-3.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R73-3.jsonl"
+      ],
+      "sha256": "35809fd74d8d4e0e0d915711c3b9badf87b1474b87b47a822153af2790a6a590",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R730.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R730.jsonl"
+      ],
+      "sha256": "380ca41c1b5f5502a19233ba217d432aa6040913d1828b040c6f3f12b6fa65be",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R732.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R732.jsonl"
+      ],
+      "sha256": "2440fa02f30fdb7da8741584f0e8d17bbac8a6e10ef5fa498cdbf0fd979af516",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R733.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R733.jsonl"
+      ],
+      "sha256": "d7dbbd96110c71898836428bfe2b64f1a5a5a096a68dc27b38c11260db37c736",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R734.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R734.jsonl"
+      ],
+      "sha256": "98f5975ae83444f5db054938b2abeea816ea5560ebb6f8a5d71950c43d76e1ef",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R735.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R735.jsonl"
+      ],
+      "sha256": "9ef72ded4d4f12909d3312fb46cfdf5e53224edb56d6bfcbd8f75ce4ce29d5ed",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R736.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R736.jsonl"
+      ],
+      "sha256": "5e54a2cee377a2187c5ebe57ddf1321b873057274e7140dc17f516bb72d2d6e8",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R737.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R737.jsonl"
+      ],
+      "sha256": "d4b71fc0b936bacda78bcc184575dd8cae2ddf5d09d72d6f259e86f3a988b1f0",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R738.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R738.jsonl"
+      ],
+      "sha256": "1b041ec50a293ff7d65cadf4c2d151ce9721d9583c02f165ec31ce6e0cc3101a",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R741.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R741.jsonl"
+      ],
+      "sha256": "217b27620a3eab324216b9a183eef82ffd910c28e0c7375ce22d82df0e11ddc8",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R749.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R749.jsonl"
+      ],
+      "sha256": "e630f5518a3c9c6cc0eee5cc145cfa694caee7a64e666d13869e4e053ffc559f",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R751.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R751.jsonl"
+      ],
+      "sha256": "ebbed935e7f44bf577bdd1a7c8ac0c63e70540d7f6b90e86c2014ab322f3dbb9",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R759.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R759.jsonl"
+      ],
+      "sha256": "3139fdae749968bba0eae9d71c02b7aa93c36c5adcb1193e2cdf26a2317659da",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R762.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R762.jsonl"
+      ],
+      "sha256": "b52ba90c367d2844d6919b9bf3f08978d890a3ad9501bf58196b9944821e78a8",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R763.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R763.jsonl",
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw3\\raw\\R763.jsonl"
+      ],
+      "sha256": "934fae2349fb1826f2da1e57a0a0a113be39da8f9094d4109d5a4b3f0bf2b3fe",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R764.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R764.jsonl"
+      ],
+      "sha256": "6560114d37da48435bd0ed9b87ae748d24704c83060a26b13b806868dfad41a2",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R765.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R765.jsonl"
+      ],
+      "sha256": "5041167bc50afbc8bbf6beab37dde5e26915175fa27b66a5721b2ef8c28f8452",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R766.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R766.jsonl"
+      ],
+      "sha256": "e4f2ca9394cc2df19eab2926c276de715e799686c80cd78ef9a0eb478b9f6901",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R767.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R767.jsonl"
+      ],
+      "sha256": "56179b42afaa392616ade2d00c5fd5ea2144b875c9dfc1e2da4eee053da427f5",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R768.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R768.jsonl"
+      ],
+      "sha256": "a4a8cafad884a9e3879bc6427ca2599f8954d3cd9e0730a452e45f14df9cbc49",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R771.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R771.jsonl"
+      ],
+      "sha256": "c8bca51d1833f977cc4f9b268d33205b595c7ac1134c7b78a9f7d6e4d62aeca0",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R772.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R772.jsonl"
+      ],
+      "sha256": "5d11e0af0669916bd7a109f01540b55cd4c61128329cf6e5a0a62c67fbdaa200",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R773.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R773.jsonl"
+      ],
+      "sha256": "7cb26df63f920f19affdc71e7204524744ddbd68fdca602542411266391f0f9a",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R774.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R774.jsonl"
+      ],
+      "sha256": "3f1ae0276d73f62ddfd3d6ec2aa01ab863a1d31ee5faca48000b885a382b8e5f",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R775.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R775.jsonl"
+      ],
+      "sha256": "df2ada6295db0d95b95a93fb00dc02438531296cbd1c2b717310b0545e001366",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R776.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R776.jsonl"
+      ],
+      "sha256": "6fd3c408cd844b85cabd057c24f25cf2077c8fc4c66f787ad5efb58dc73e688e",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R777.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R777.jsonl"
+      ],
+      "sha256": "8073b7462d46c54c19fce04cf5138b448e380b0a60e1f0b8eaa90f69eb8b2b2e",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R778.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R778.jsonl"
+      ],
+      "sha256": "9c4c102f4467938915e48210441d2903038068ef146e3981271d5ae971d966d9",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R781.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R781.jsonl"
+      ],
+      "sha256": "d0785499dc90fdecfd2fb6d4470f525999c3a58311f2a897b9814c3eda8b00c7",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R782.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R782.jsonl"
+      ],
+      "sha256": "37578dad1c428ba16ebdd8671aacbd95c93cf67b79f94f707ade111197fbfb25",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R783.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R783.jsonl"
+      ],
+      "sha256": "8eeacb697772f41cb7abf09e104fd9028dbd5be2b75367dd02992d6d833fd9cb",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R787.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R787.jsonl"
+      ],
+      "sha256": "85b727906880054756fc6028819c9fa412ec54fb470d2608cef80453c26fbbb5",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R788.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R788.jsonl"
+      ],
+      "sha256": "1ba1c66375be11e57b4a1a768e89f3da7c615243aea0b2575af8e75619b21cfb",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R81.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R81.jsonl"
+      ],
+      "sha256": "15f8a9b3f1164537cf23dd595c86575e1509eaae0d847a030abd20bb4ab323b5",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R82.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R82.jsonl"
+      ],
+      "sha256": "962f97ae55af3591a57d1b6b10ebc541ba8df3aadc4bd3d2c516dce58419b2bb",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R83.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R83.jsonl"
+      ],
+      "sha256": "0bf85f555da5240e6b5830fcaf158b9160656067f9dc9ec6bf8abcdaac32bf5d",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R84.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R84.jsonl"
+      ],
+      "sha256": "85a1d8707709ee16878a72321c1060d1d601bbd8b1e65250073b38a96b5b90a8",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R85.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R85.jsonl"
+      ],
+      "sha256": "eb2f2b91169c72dec970792233f5d5f1fa449afb7f9b148071478ea7db1c0355",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R87.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R87.jsonl"
+      ],
+      "sha256": "91008196907d49b5c691c776eaa363c84633bf37016d85b64c2b307dbd31ace0",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R91.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R91.jsonl"
+      ],
+      "sha256": "d260285a751ce58bba1b83f1a8117b0981219e0d861a76106915b85562b69ad4",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R917.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R917.jsonl"
+      ],
+      "sha256": "fc4e0952686f063e37d84aead7b7e3ba9f036297df9226c6ce9bfd156b21d722",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R92.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R92.jsonl"
+      ],
+      "sha256": "00ce26a720ff491e68e27f9e57fa259b8009914604e64133a246ed809305ac79",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R93.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R93.jsonl"
+      ],
+      "sha256": "743a2f3ff6bba84119958fd0f91b5849e11a61f256c166a302ed79335e611712",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R94.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R94.jsonl"
+      ],
+      "sha256": "c3598cd8f7df36cbc9582cedf1841e69da296390569923c80fcf3a56699e3072",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R95.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R95.jsonl"
+      ],
+      "sha256": "07fb84fe8f0250983dd77dcfb3fa201cb5b8223b3e31503d52820232d585cd2c",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R96.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R96.jsonl"
+      ],
+      "sha256": "1b7c20768d535ad84f344bfd9bdeed8aa75b62de83b1346c47a9d5733b6137b4",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R97.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R97.jsonl"
+      ],
+      "sha256": "4a00db004cd605225b72abbe36df3f45b6c22dae599d2dfafce27896a5ca9dbd",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "R99.jsonl",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\R99.jsonl"
+      ],
+      "sha256": "de50876d4c01e3391e1b826e7158eed029e279fd4a35b873a366dce1643d276c",
+      "rows": 50,
+      "action": "added"
+    },
+    {
+      "file": "cnki_papers.csv",
+      "sources": [
+        "E:\\微信聊天记录\\xwechat_files\\wxid_cfhmfqzeswqs22_27c8\\msg\\file\\2026-09\\raw1\\raw\\cnki_papers.csv"
+      ],
+      "sha256": "f1356bc2fc0b75c34ca47ce21a18779566b31667734ba2c8267f08858d8d088e",
+      "rows": 6379,
+      "action": "replaced_with_backup"
+    }
+  ]
+}

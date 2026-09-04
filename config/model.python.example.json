@@ -1,0 +1,13 @@
+{
+  "labels_path": "../labels.json",
+  "categories_path": "../category_mapping.json",
+  "model": {
+    "kind": "python",
+    "factory": "model.classifier:create_classifier",
+    "checkpoint_path": "../model/checkpoints/classifier"
+  },
+  "preprocessor_factory": "preprocess.clean:create_preprocessor",
+  "agent": {"top_k": 5, "confidence": null},
+  "trace_path": "../logs/agent.jsonl"
+}
+

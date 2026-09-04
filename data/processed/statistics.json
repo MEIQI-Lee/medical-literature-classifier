@@ -1,0 +1,1163 @@
+{
+  "data_file": "D:\\explore\\homework\\academic-classification-agent\\data\\processed\\cleaned.jsonl",
+  "total": 5450,
+  "label_count": 110,
+  "dataset_sha256": "8f05004b3454f949d9ba230e63c6980810de04f3cab698ae475b4a03dfebac26",
+  "length_unit": "Unicode characters, not model tokens",
+  "text_length_histogram": {
+    "0-128": 968,
+    "129-256": 894,
+    "257-512": 1917,
+    "513-1024": 1671,
+    "1025+": 0
+  },
+  "category_quality": {
+    "R-33": {
+      "name": "实验医学、医学实验",
+      "count": 50,
+      "missing_abstract": 0,
+      "missing_keywords": 43,
+      "title_only": 0,
+      "possibly_truncated_abstract": 3,
+      "mean_text_length": 148.06
+    },
+    "R11": {
+      "name": "卫生基础科学",
+      "count": 50,
+      "missing_abstract": 15,
+      "missing_keywords": 27,
+      "title_only": 15,
+      "possibly_truncated_abstract": 5,
+      "mean_text_length": 196.68
+    },
+    "R12": {
+      "name": "环境卫生、环境医学",
+      "count": 46,
+      "missing_abstract": 10,
+      "missing_keywords": 12,
+      "title_only": 10,
+      "possibly_truncated_abstract": 14,
+      "mean_text_length": 362.54
+    },
+    "R13": {
+      "name": "劳动卫生",
+      "count": 50,
+      "missing_abstract": 13,
+      "missing_keywords": 21,
+      "title_only": 13,
+      "possibly_truncated_abstract": 15,
+      "mean_text_length": 320.66
+    },
+    "R14": {
+      "name": "放射卫生",
+      "count": 50,
+      "missing_abstract": 3,
+      "missing_keywords": 8,
+      "title_only": 3,
+      "possibly_truncated_abstract": 19,
+      "mean_text_length": 408.88
+    },
+    "R15": {
+      "name": "营养卫生、食品卫生",
+      "count": 50,
+      "missing_abstract": 11,
+      "missing_keywords": 12,
+      "title_only": 11,
+      "possibly_truncated_abstract": 20,
+      "mean_text_length": 378.36
+    },
+    "R16": {
+      "name": "个人卫生",
+      "count": 50,
+      "missing_abstract": 19,
+      "missing_keywords": 46,
+      "title_only": 19,
+      "possibly_truncated_abstract": 1,
+      "mean_text_length": 131
+    },
+    "R169": {
+      "name": "计划生育与卫生",
+      "count": 50,
+      "missing_abstract": 20,
+      "missing_keywords": 34,
+      "title_only": 20,
+      "possibly_truncated_abstract": 6,
+      "mean_text_length": 238.04
+    },
+    "R17": {
+      "name": "妇幼卫生",
+      "count": 50,
+      "missing_abstract": 36,
+      "missing_keywords": 39,
+      "title_only": 36,
+      "possibly_truncated_abstract": 4,
+      "mean_text_length": 135.06
+    },
+    "R179": {
+      "name": "儿童、少年卫生",
+      "count": 50,
+      "missing_abstract": 14,
+      "missing_keywords": 22,
+      "title_only": 14,
+      "possibly_truncated_abstract": 16,
+      "mean_text_length": 311.26
+    },
+    "R18": {
+      "name": "流行病学与防疫",
+      "count": 50,
+      "missing_abstract": 18,
+      "missing_keywords": 22,
+      "title_only": 18,
+      "possibly_truncated_abstract": 6,
+      "mean_text_length": 226.48
+    },
+    "R19": {
+      "name": "保健组织与事业（卫生事业管理）",
+      "count": 50,
+      "missing_abstract": 23,
+      "missing_keywords": 33,
+      "title_only": 23,
+      "possibly_truncated_abstract": 2,
+      "mean_text_length": 189.86
+    },
+    "R2-0": {
+      "name": "中国医学理论",
+      "count": 49,
+      "missing_abstract": 6,
+      "missing_keywords": 23,
+      "title_only": 6,
+      "possibly_truncated_abstract": 8,
+      "mean_text_length": 239.47
+    },
+    "R2-5": {
+      "name": "中医学丛书、文集、连续出版物",
+      "count": 40,
+      "missing_abstract": 0,
+      "missing_keywords": 22,
+      "title_only": 0,
+      "possibly_truncated_abstract": 0,
+      "mean_text_length": 232.72
+    },
+    "R21": {
+      "name": "中医预防、卫生学",
+      "count": 50,
+      "missing_abstract": 19,
+      "missing_keywords": 30,
+      "title_only": 18,
+      "possibly_truncated_abstract": 4,
+      "mean_text_length": 169.04
+    },
+    "R22": {
+      "name": "中医基础理论",
+      "count": 50,
+      "missing_abstract": 1,
+      "missing_keywords": 5,
+      "title_only": 1,
+      "possibly_truncated_abstract": 4,
+      "mean_text_length": 328.4
+    },
+    "R24": {
+      "name": "中医临床学",
+      "count": 50,
+      "missing_abstract": 3,
+      "missing_keywords": 8,
+      "title_only": 3,
+      "possibly_truncated_abstract": 6,
+      "mean_text_length": 360.14
+    },
+    "R25": {
+      "name": "中医内科",
+      "count": 50,
+      "missing_abstract": 19,
+      "missing_keywords": 23,
+      "title_only": 19,
+      "possibly_truncated_abstract": 6,
+      "mean_text_length": 215.5
+    },
+    "R26": {
+      "name": "中医外科",
+      "count": 50,
+      "missing_abstract": 1,
+      "missing_keywords": 5,
+      "title_only": 1,
+      "possibly_truncated_abstract": 8,
+      "mean_text_length": 360.62
+    },
+    "R28": {
+      "name": "中药学",
+      "count": 50,
+      "missing_abstract": 1,
+      "missing_keywords": 11,
+      "title_only": 1,
+      "possibly_truncated_abstract": 5,
+      "mean_text_length": 358.38
+    },
+    "R29": {
+      "name": "中国少数民族医学",
+      "count": 50,
+      "missing_abstract": 3,
+      "missing_keywords": 3,
+      "title_only": 3,
+      "possibly_truncated_abstract": 26,
+      "mean_text_length": 440.2
+    },
+    "R31": {
+      "name": "医用一般科学",
+      "count": 29,
+      "missing_abstract": 12,
+      "missing_keywords": 22,
+      "title_only": 11,
+      "possibly_truncated_abstract": 8,
+      "mean_text_length": 105.79
+    },
+    "R32": {
+      "name": "人体形态学",
+      "count": 50,
+      "missing_abstract": 8,
+      "missing_keywords": 18,
+      "title_only": 8,
+      "possibly_truncated_abstract": 10,
+      "mean_text_length": 316.74
+    },
+    "R33": {
+      "name": "人体生理学",
+      "count": 50,
+      "missing_abstract": 6,
+      "missing_keywords": 32,
+      "title_only": 6,
+      "possibly_truncated_abstract": 9,
+      "mean_text_length": 315.68
+    },
+    "R36": {
+      "name": "病理学",
+      "count": 50,
+      "missing_abstract": 2,
+      "missing_keywords": 24,
+      "title_only": 2,
+      "possibly_truncated_abstract": 14,
+      "mean_text_length": 361.86
+    },
+    "R37": {
+      "name": "医学微生物学（病原细菌学、病原微生物学）",
+      "count": 50,
+      "missing_abstract": 4,
+      "missing_keywords": 19,
+      "title_only": 4,
+      "possibly_truncated_abstract": 11,
+      "mean_text_length": 362.8
+    },
+    "R38": {
+      "name": "医学寄生虫学",
+      "count": 50,
+      "missing_abstract": 8,
+      "missing_keywords": 9,
+      "title_only": 8,
+      "possibly_truncated_abstract": 11,
+      "mean_text_length": 309.6
+    },
+    "R392": {
+      "name": "医学免疫学",
+      "count": 50,
+      "missing_abstract": 5,
+      "missing_keywords": 13,
+      "title_only": 5,
+      "possibly_truncated_abstract": 22,
+      "mean_text_length": 419.04
+    },
+    "R394": {
+      "name": "医学遗传学",
+      "count": 50,
+      "missing_abstract": 10,
+      "missing_keywords": 31,
+      "title_only": 10,
+      "possibly_truncated_abstract": 22,
+      "mean_text_length": 404.76
+    },
+    "R395": {
+      "name": "医学心理学、病理心理学",
+      "count": 50,
+      "missing_abstract": 13,
+      "missing_keywords": 25,
+      "title_only": 13,
+      "possibly_truncated_abstract": 10,
+      "mean_text_length": 312.18
+    },
+    "R44": {
+      "name": "诊断学",
+      "count": 50,
+      "missing_abstract": 7,
+      "missing_keywords": 25,
+      "title_only": 7,
+      "possibly_truncated_abstract": 8,
+      "mean_text_length": 324.72
+    },
+    "R45": {
+      "name": "治疗学",
+      "count": 50,
+      "missing_abstract": 8,
+      "missing_keywords": 23,
+      "title_only": 8,
+      "possibly_truncated_abstract": 14,
+      "mean_text_length": 339.96
+    },
+    "R47": {
+      "name": "护理学",
+      "count": 50,
+      "missing_abstract": 0,
+      "missing_keywords": 3,
+      "title_only": 0,
+      "possibly_truncated_abstract": 7,
+      "mean_text_length": 383.26
+    },
+    "R48": {
+      "name": "临终关怀学",
+      "count": 50,
+      "missing_abstract": 8,
+      "missing_keywords": 26,
+      "title_only": 8,
+      "possibly_truncated_abstract": 3,
+      "mean_text_length": 293.08
+    },
+    "R49": {
+      "name": "康复医学",
+      "count": 48,
+      "missing_abstract": 9,
+      "missing_keywords": 23,
+      "title_only": 9,
+      "possibly_truncated_abstract": 6,
+      "mean_text_length": 314.5
+    },
+    "R51": {
+      "name": "传染病",
+      "count": 50,
+      "missing_abstract": 2,
+      "missing_keywords": 8,
+      "title_only": 2,
+      "possibly_truncated_abstract": 11,
+      "mean_text_length": 389.12
+    },
+    "R52": {
+      "name": "结核病",
+      "count": 50,
+      "missing_abstract": 41,
+      "missing_keywords": 41,
+      "title_only": 41,
+      "possibly_truncated_abstract": 5,
+      "mean_text_length": 114.34
+    },
+    "R53": {
+      "name": "寄生虫病",
+      "count": 50,
+      "missing_abstract": 2,
+      "missing_keywords": 5,
+      "title_only": 2,
+      "possibly_truncated_abstract": 15,
+      "mean_text_length": 395.28
+    },
+    "R54": {
+      "name": "心脏、血管（循环系）疾病",
+      "count": 47,
+      "missing_abstract": 0,
+      "missing_keywords": 5,
+      "title_only": 0,
+      "possibly_truncated_abstract": 25,
+      "mean_text_length": 461.13
+    },
+    "R55": {
+      "name": "血液及淋巴系疾病",
+      "count": 49,
+      "missing_abstract": 38,
+      "missing_keywords": 43,
+      "title_only": 38,
+      "possibly_truncated_abstract": 4,
+      "mean_text_length": 108.59
+    },
+    "R56": {
+      "name": "呼吸系及胸部疾病",
+      "count": 50,
+      "missing_abstract": 1,
+      "missing_keywords": 8,
+      "title_only": 1,
+      "possibly_truncated_abstract": 27,
+      "mean_text_length": 460.46
+    },
+    "R57": {
+      "name": "消化系及腹部疾病",
+      "count": 50,
+      "missing_abstract": 3,
+      "missing_keywords": 13,
+      "title_only": 3,
+      "possibly_truncated_abstract": 19,
+      "mean_text_length": 392.64
+    },
+    "R58": {
+      "name": "内分泌腺疾病及代谢病",
+      "count": 49,
+      "missing_abstract": 7,
+      "missing_keywords": 21,
+      "title_only": 7,
+      "possibly_truncated_abstract": 14,
+      "mean_text_length": 331
+    },
+    "R59": {
+      "name": "全身性疾病",
+      "count": 50,
+      "missing_abstract": 6,
+      "missing_keywords": 17,
+      "title_only": 6,
+      "possibly_truncated_abstract": 11,
+      "mean_text_length": 312.52
+    },
+    "R599": {
+      "name": "地方病学",
+      "count": 50,
+      "missing_abstract": 10,
+      "missing_keywords": 13,
+      "title_only": 10,
+      "possibly_truncated_abstract": 21,
+      "mean_text_length": 372.24
+    },
+    "R602": {
+      "name": "外科病理学、解剖学",
+      "count": 50,
+      "missing_abstract": 8,
+      "missing_keywords": 9,
+      "title_only": 8,
+      "possibly_truncated_abstract": 20,
+      "mean_text_length": 373.64
+    },
+    "R604": {
+      "name": "外科诊断学",
+      "count": 50,
+      "missing_abstract": 31,
+      "missing_keywords": 32,
+      "title_only": 29,
+      "possibly_truncated_abstract": 4,
+      "mean_text_length": 146.28
+    },
+    "R605": {
+      "name": "外科治疗学",
+      "count": 50,
+      "missing_abstract": 22,
+      "missing_keywords": 26,
+      "title_only": 22,
+      "possibly_truncated_abstract": 7,
+      "mean_text_length": 211.78
+    },
+    "R608": {
+      "name": "外科诊疗器械与用具",
+      "count": 50,
+      "missing_abstract": 4,
+      "missing_keywords": 7,
+      "title_only": 4,
+      "possibly_truncated_abstract": 14,
+      "mean_text_length": 371.7
+    },
+    "R61": {
+      "name": "外科手术学",
+      "count": 50,
+      "missing_abstract": 16,
+      "missing_keywords": 33,
+      "title_only": 16,
+      "possibly_truncated_abstract": 2,
+      "mean_text_length": 251.74
+    },
+    "R62": {
+      "name": "整形外科学（修复外科学）",
+      "count": 50,
+      "missing_abstract": 4,
+      "missing_keywords": 17,
+      "title_only": 4,
+      "possibly_truncated_abstract": 13,
+      "mean_text_length": 374.74
+    },
+    "R63": {
+      "name": "外科感染",
+      "count": 50,
+      "missing_abstract": 3,
+      "missing_keywords": 7,
+      "title_only": 3,
+      "possibly_truncated_abstract": 15,
+      "mean_text_length": 368.78
+    },
+    "R64": {
+      "name": "创伤外科学",
+      "count": 50,
+      "missing_abstract": 3,
+      "missing_keywords": 10,
+      "title_only": 3,
+      "possibly_truncated_abstract": 21,
+      "mean_text_length": 405.18
+    },
+    "R65": {
+      "name": "外科学各论",
+      "count": 49,
+      "missing_abstract": 12,
+      "missing_keywords": 18,
+      "title_only": 12,
+      "possibly_truncated_abstract": 7,
+      "mean_text_length": 285.51
+    },
+    "R68": {
+      "name": "骨科学（运动系疾病、矫形外科学）",
+      "count": 50,
+      "missing_abstract": 4,
+      "missing_keywords": 15,
+      "title_only": 4,
+      "possibly_truncated_abstract": 15,
+      "mean_text_length": 385.16
+    },
+    "R711": {
+      "name": "妇科学",
+      "count": 50,
+      "missing_abstract": 0,
+      "missing_keywords": 13,
+      "title_only": 0,
+      "possibly_truncated_abstract": 23,
+      "mean_text_length": 429.6
+    },
+    "R713": {
+      "name": "妇科手术",
+      "count": 50,
+      "missing_abstract": 0,
+      "missing_keywords": 8,
+      "title_only": 0,
+      "possibly_truncated_abstract": 25,
+      "mean_text_length": 467.28
+    },
+    "R714": {
+      "name": "产科学",
+      "count": 50,
+      "missing_abstract": 0,
+      "missing_keywords": 14,
+      "title_only": 0,
+      "possibly_truncated_abstract": 23,
+      "mean_text_length": 452.32
+    },
+    "R715": {
+      "name": "临床优生学",
+      "count": 49,
+      "missing_abstract": 9,
+      "missing_keywords": 22,
+      "title_only": 9,
+      "possibly_truncated_abstract": 19,
+      "mean_text_length": 376.71
+    },
+    "R717": {
+      "name": "助产学",
+      "count": 50,
+      "missing_abstract": 1,
+      "missing_keywords": 19,
+      "title_only": 1,
+      "possibly_truncated_abstract": 14,
+      "mean_text_length": 388.9
+    },
+    "R726": {
+      "name": "小儿外科学",
+      "count": 50,
+      "missing_abstract": 5,
+      "missing_keywords": 22,
+      "title_only": 5,
+      "possibly_truncated_abstract": 20,
+      "mean_text_length": 392.84
+    },
+    "R729": {
+      "name": "小儿其他疾病",
+      "count": 50,
+      "missing_abstract": 19,
+      "missing_keywords": 21,
+      "title_only": 17,
+      "possibly_truncated_abstract": 7,
+      "mean_text_length": 250.14
+    },
+    "R73-3": {
+      "name": "肿瘤学实验研究",
+      "count": 49,
+      "missing_abstract": 8,
+      "missing_keywords": 22,
+      "title_only": 8,
+      "possibly_truncated_abstract": 16,
+      "mean_text_length": 379.59
+    },
+    "R730": {
+      "name": "一般性问题",
+      "count": 50,
+      "missing_abstract": 3,
+      "missing_keywords": 11,
+      "title_only": 3,
+      "possibly_truncated_abstract": 15,
+      "mean_text_length": 434.4
+    },
+    "R732": {
+      "name": "心血管肿瘤",
+      "count": 50,
+      "missing_abstract": 18,
+      "missing_keywords": 29,
+      "title_only": 18,
+      "possibly_truncated_abstract": 7,
+      "mean_text_length": 188.62
+    },
+    "R733": {
+      "name": "造血器及淋巴系肿瘤",
+      "count": 49,
+      "missing_abstract": 3,
+      "missing_keywords": 7,
+      "title_only": 3,
+      "possibly_truncated_abstract": 24,
+      "mean_text_length": 453.43
+    },
+    "R734": {
+      "name": "呼吸系肿瘤",
+      "count": 50,
+      "missing_abstract": 2,
+      "missing_keywords": 14,
+      "title_only": 2,
+      "possibly_truncated_abstract": 22,
+      "mean_text_length": 438.54
+    },
+    "R735": {
+      "name": "消化系肿瘤",
+      "count": 50,
+      "missing_abstract": 1,
+      "missing_keywords": 8,
+      "title_only": 1,
+      "possibly_truncated_abstract": 29,
+      "mean_text_length": 482.06
+    },
+    "R736": {
+      "name": "内分泌腺肿瘤",
+      "count": 50,
+      "missing_abstract": 4,
+      "missing_keywords": 13,
+      "title_only": 4,
+      "possibly_truncated_abstract": 15,
+      "mean_text_length": 359.72
+    },
+    "R737": {
+      "name": "泌尿生殖器肿瘤",
+      "count": 50,
+      "missing_abstract": 6,
+      "missing_keywords": 26,
+      "title_only": 6,
+      "possibly_truncated_abstract": 14,
+      "mean_text_length": 365.22
+    },
+    "R738": {
+      "name": "运动系肿瘤",
+      "count": 50,
+      "missing_abstract": 1,
+      "missing_keywords": 15,
+      "title_only": 1,
+      "possibly_truncated_abstract": 16,
+      "mean_text_length": 395.74
+    },
+    "R741": {
+      "name": "神经病学",
+      "count": 49,
+      "missing_abstract": 2,
+      "missing_keywords": 16,
+      "title_only": 2,
+      "possibly_truncated_abstract": 15,
+      "mean_text_length": 427.33
+    },
+    "R749": {
+      "name": "精神病学",
+      "count": 50,
+      "missing_abstract": 3,
+      "missing_keywords": 9,
+      "title_only": 3,
+      "possibly_truncated_abstract": 16,
+      "mean_text_length": 405.92
+    },
+    "R751": {
+      "name": "皮肤病学",
+      "count": 50,
+      "missing_abstract": 3,
+      "missing_keywords": 16,
+      "title_only": 3,
+      "possibly_truncated_abstract": 7,
+      "mean_text_length": 363.74
+    },
+    "R759": {
+      "name": "性病学",
+      "count": 50,
+      "missing_abstract": 0,
+      "missing_keywords": 6,
+      "title_only": 0,
+      "possibly_truncated_abstract": 30,
+      "mean_text_length": 477.66
+    },
+    "R762": {
+      "name": "耳鼻咽喉外科学",
+      "count": 50,
+      "missing_abstract": 27,
+      "missing_keywords": 31,
+      "title_only": 27,
+      "possibly_truncated_abstract": 10,
+      "mean_text_length": 217.92
+    },
+    "R763": {
+      "name": "耳鼻咽喉科真菌病",
+      "count": 50,
+      "missing_abstract": 2,
+      "missing_keywords": 6,
+      "title_only": 2,
+      "possibly_truncated_abstract": 1,
+      "mean_text_length": 276.42
+    },
+    "R764": {
+      "name": "耳科学、耳疾病",
+      "count": 49,
+      "missing_abstract": 0,
+      "missing_keywords": 11,
+      "title_only": 0,
+      "possibly_truncated_abstract": 25,
+      "mean_text_length": 463.86
+    },
+    "R765": {
+      "name": "鼻科学、鼻疾病",
+      "count": 49,
+      "missing_abstract": 5,
+      "missing_keywords": 13,
+      "title_only": 5,
+      "possibly_truncated_abstract": 23,
+      "mean_text_length": 419.92
+    },
+    "R766": {
+      "name": "咽科学、咽疾病",
+      "count": 50,
+      "missing_abstract": 1,
+      "missing_keywords": 9,
+      "title_only": 1,
+      "possibly_truncated_abstract": 25,
+      "mean_text_length": 460.58
+    },
+    "R767": {
+      "name": "喉科学、喉疾病",
+      "count": 50,
+      "missing_abstract": 1,
+      "missing_keywords": 12,
+      "title_only": 1,
+      "possibly_truncated_abstract": 20,
+      "mean_text_length": 432.74
+    },
+    "R768": {
+      "name": "气管与食管镜学",
+      "count": 50,
+      "missing_abstract": 3,
+      "missing_keywords": 16,
+      "title_only": 3,
+      "possibly_truncated_abstract": 10,
+      "mean_text_length": 323.64
+    },
+    "R771": {
+      "name": "眼的一般性疾病",
+      "count": 50,
+      "missing_abstract": 1,
+      "missing_keywords": 8,
+      "title_only": 1,
+      "possibly_truncated_abstract": 23,
+      "mean_text_length": 451.48
+    },
+    "R772": {
+      "name": "眼纤维膜疾病",
+      "count": 50,
+      "missing_abstract": 4,
+      "missing_keywords": 13,
+      "title_only": 4,
+      "possibly_truncated_abstract": 19,
+      "mean_text_length": 374.8
+    },
+    "R773": {
+      "name": "眼色素层（葡萄膜）疾病",
+      "count": 50,
+      "missing_abstract": 0,
+      "missing_keywords": 3,
+      "title_only": 0,
+      "possibly_truncated_abstract": 29,
+      "mean_text_length": 493.24
+    },
+    "R774": {
+      "name": "视网膜及视神经疾病",
+      "count": 50,
+      "missing_abstract": 1,
+      "missing_keywords": 10,
+      "title_only": 1,
+      "possibly_truncated_abstract": 24,
+      "mean_text_length": 479.06
+    },
+    "R775": {
+      "name": "眼压与青光眼",
+      "count": 50,
+      "missing_abstract": 2,
+      "missing_keywords": 16,
+      "title_only": 2,
+      "possibly_truncated_abstract": 14,
+      "mean_text_length": 391.82
+    },
+    "R776": {
+      "name": "晶状体与玻璃体疾病",
+      "count": 50,
+      "missing_abstract": 10,
+      "missing_keywords": 23,
+      "title_only": 10,
+      "possibly_truncated_abstract": 20,
+      "mean_text_length": 342
+    },
+    "R777": {
+      "name": "眼附属器官疾病",
+      "count": 50,
+      "missing_abstract": 9,
+      "missing_keywords": 16,
+      "title_only": 9,
+      "possibly_truncated_abstract": 11,
+      "mean_text_length": 297.2
+    },
+    "R778": {
+      "name": "眼屈光学",
+      "count": 50,
+      "missing_abstract": 6,
+      "missing_keywords": 16,
+      "title_only": 6,
+      "possibly_truncated_abstract": 20,
+      "mean_text_length": 374.8
+    },
+    "R781": {
+      "name": "口腔内科学",
+      "count": 50,
+      "missing_abstract": 1,
+      "missing_keywords": 9,
+      "title_only": 1,
+      "possibly_truncated_abstract": 23,
+      "mean_text_length": 448.16
+    },
+    "R782": {
+      "name": "口腔颌面部外科学",
+      "count": 50,
+      "missing_abstract": 5,
+      "missing_keywords": 7,
+      "title_only": 5,
+      "possibly_truncated_abstract": 20,
+      "mean_text_length": 415.9
+    },
+    "R783": {
+      "name": "口腔矫形学",
+      "count": 50,
+      "missing_abstract": 3,
+      "missing_keywords": 8,
+      "title_only": 3,
+      "possibly_truncated_abstract": 26,
+      "mean_text_length": 429.54
+    },
+    "R787": {
+      "name": "老年口腔疾病",
+      "count": 50,
+      "missing_abstract": 1,
+      "missing_keywords": 6,
+      "title_only": 1,
+      "possibly_truncated_abstract": 13,
+      "mean_text_length": 384.08
+    },
+    "R788": {
+      "name": "儿童口腔疾病",
+      "count": 50,
+      "missing_abstract": 1,
+      "missing_keywords": 12,
+      "title_only": 1,
+      "possibly_truncated_abstract": 13,
+      "mean_text_length": 376.98
+    },
+    "R81": {
+      "name": "放射医学",
+      "count": 50,
+      "missing_abstract": 7,
+      "missing_keywords": 27,
+      "title_only": 7,
+      "possibly_truncated_abstract": 9,
+      "mean_text_length": 311.04
+    },
+    "R82": {
+      "name": "军事医学",
+      "count": 50,
+      "missing_abstract": 2,
+      "missing_keywords": 11,
+      "title_only": 2,
+      "possibly_truncated_abstract": 14,
+      "mean_text_length": 367.68
+    },
+    "R83": {
+      "name": "航海医学",
+      "count": 50,
+      "missing_abstract": 5,
+      "missing_keywords": 7,
+      "title_only": 5,
+      "possibly_truncated_abstract": 14,
+      "mean_text_length": 364.2
+    },
+    "R84": {
+      "name": "潜水医学",
+      "count": 50,
+      "missing_abstract": 3,
+      "missing_keywords": 3,
+      "title_only": 3,
+      "possibly_truncated_abstract": 15,
+      "mean_text_length": 353.34
+    },
+    "R85": {
+      "name": "航空航天医学",
+      "count": 50,
+      "missing_abstract": 2,
+      "missing_keywords": 4,
+      "title_only": 2,
+      "possibly_truncated_abstract": 16,
+      "mean_text_length": 408.12
+    },
+    "R87": {
+      "name": "运动医学",
+      "count": 50,
+      "missing_abstract": 6,
+      "missing_keywords": 23,
+      "title_only": 6,
+      "possibly_truncated_abstract": 25,
+      "mean_text_length": 427.66
+    },
+    "R91": {
+      "name": "药物基础科学",
+      "count": 50,
+      "missing_abstract": 8,
+      "missing_keywords": 13,
+      "title_only": 8,
+      "possibly_truncated_abstract": 12,
+      "mean_text_length": 358.3
+    },
+    "R917": {
+      "name": "药物分析",
+      "count": 50,
+      "missing_abstract": 1,
+      "missing_keywords": 2,
+      "title_only": 1,
+      "possibly_truncated_abstract": 10,
+      "mean_text_length": 421.22
+    },
+    "R92": {
+      "name": "药典、药方集（处方集）、药物鉴定",
+      "count": 50,
+      "missing_abstract": 16,
+      "missing_keywords": 24,
+      "title_only": 16,
+      "possibly_truncated_abstract": 3,
+      "mean_text_length": 181.46
+    },
+    "R93": {
+      "name": "生药学（天然药物学）",
+      "count": 50,
+      "missing_abstract": 32,
+      "missing_keywords": 37,
+      "title_only": 32,
+      "possibly_truncated_abstract": 6,
+      "mean_text_length": 143.72
+    },
+    "R94": {
+      "name": "药剂学",
+      "count": 50,
+      "missing_abstract": 17,
+      "missing_keywords": 22,
+      "title_only": 17,
+      "possibly_truncated_abstract": 10,
+      "mean_text_length": 253.04
+    },
+    "R95": {
+      "name": "药事组织",
+      "count": 50,
+      "missing_abstract": 11,
+      "missing_keywords": 12,
+      "title_only": 11,
+      "possibly_truncated_abstract": 12,
+      "mean_text_length": 333.42
+    },
+    "R96": {
+      "name": "药理学",
+      "count": 50,
+      "missing_abstract": 1,
+      "missing_keywords": 5,
+      "title_only": 1,
+      "possibly_truncated_abstract": 18,
+      "mean_text_length": 415.52
+    },
+    "R97": {
+      "name": "药品",
+      "count": 50,
+      "missing_abstract": 8,
+      "missing_keywords": 33,
+      "title_only": 8,
+      "possibly_truncated_abstract": 1,
+      "mean_text_length": 251.02
+    },
+    "R99": {
+      "name": "毒物学（毒理学）",
+      "count": 50,
+      "missing_abstract": 1,
+      "missing_keywords": 4,
+      "title_only": 1,
+      "possibly_truncated_abstract": 19,
+      "mean_text_length": 432.94
+    }
+  },
+  "classes_without_abstracts": [],
+  "category_distribution": {
+    "R-33": 50,
+    "R11": 50,
+    "R12": 46,
+    "R13": 50,
+    "R14": 50,
+    "R15": 50,
+    "R16": 50,
+    "R169": 50,
+    "R17": 50,
+    "R179": 50,
+    "R18": 50,
+    "R19": 50,
+    "R2-0": 49,
+    "R2-5": 40,
+    "R21": 50,
+    "R22": 50,
+    "R24": 50,
+    "R25": 50,
+    "R26": 50,
+    "R28": 50,
+    "R29": 50,
+    "R31": 29,
+    "R32": 50,
+    "R33": 50,
+    "R36": 50,
+    "R37": 50,
+    "R38": 50,
+    "R392": 50,
+    "R394": 50,
+    "R395": 50,
+    "R44": 50,
+    "R45": 50,
+    "R47": 50,
+    "R48": 50,
+    "R49": 48,
+    "R51": 50,
+    "R52": 50,
+    "R53": 50,
+    "R54": 47,
+    "R55": 49,
+    "R56": 50,
+    "R57": 50,
+    "R58": 49,
+    "R59": 50,
+    "R599": 50,
+    "R602": 50,
+    "R604": 50,
+    "R605": 50,
+    "R608": 50,
+    "R61": 50,
+    "R62": 50,
+    "R63": 50,
+    "R64": 50,
+    "R65": 49,
+    "R68": 50,
+    "R711": 50,
+    "R713": 50,
+    "R714": 50,
+    "R715": 49,
+    "R717": 50,
+    "R726": 50,
+    "R729": 50,
+    "R73-3": 49,
+    "R730": 50,
+    "R732": 50,
+    "R733": 49,
+    "R734": 50,
+    "R735": 50,
+    "R736": 50,
+    "R737": 50,
+    "R738": 50,
+    "R741": 49,
+    "R749": 50,
+    "R751": 50,
+    "R759": 50,
+    "R762": 50,
+    "R763": 50,
+    "R764": 49,
+    "R765": 49,
+    "R766": 50,
+    "R767": 50,
+    "R768": 50,
+    "R771": 50,
+    "R772": 50,
+    "R773": 50,
+    "R774": 50,
+    "R775": 50,
+    "R776": 50,
+    "R777": 50,
+    "R778": 50,
+    "R781": 50,
+    "R782": 50,
+    "R783": 50,
+    "R787": 50,
+    "R788": 50,
+    "R81": 50,
+    "R82": 50,
+    "R83": 50,
+    "R84": 50,
+    "R85": 50,
+    "R87": 50,
+    "R91": 50,
+    "R917": 50,
+    "R92": 50,
+    "R93": 50,
+    "R94": 50,
+    "R95": 50,
+    "R96": 50,
+    "R97": 50,
+    "R99": 50
+  },
+  "text_length_stats": {
+    "min": 5,
+    "mean": 343.15,
+    "median": 348.5,
+    "p95": 585.0,
+    "max": 869
+  },
+  "missing_fields": {
+    "title": {
+      "count": 0,
+      "rate": 0.0
+    },
+    "keywords": {
+      "count": 1873,
+      "rate": 0.34367
+    },
+    "abstract": {
+      "count": 843,
+      "rate": 0.154679
+    },
+    "source": {
+      "count": 226,
+      "rate": 0.041468
+    },
+    "year": {
+      "count": 0,
+      "rate": 0.0
+    },
+    "doi": {
+      "count": 3479,
+      "rate": 0.638349
+    }
+  },
+  "quality_flag_distribution": {
+    "missing_abstract": 843,
+    "missing_doi": 3479,
+    "missing_keywords": 1873,
+    "missing_source": 226,
+    "possibly_truncated_abstract": 1513,
+    "short_title_only": 36,
+    "title_only": 837,
+    "unverified_search_label": 5450
+  },
+  "imbalance_ratio": 1.724138
+}

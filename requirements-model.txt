@@ -1,0 +1,5 @@
+# Existing fine-tuned MedBERT deployment (tested locally on Python 3.12, macOS arm64).
+-r requirements.txt
+torch==2.7.1
+transformers==4.53.2
+numpy==1.26.4

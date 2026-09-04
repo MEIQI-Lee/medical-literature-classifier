@@ -1,0 +1,43 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	validate_input(validate_input)
+	read_text(read_text)
+	parse_document(parse_document)
+	prepare_text(prepare_text)
+	classify_text(classify_text)
+	select_candidates(select_candidates)
+	accept_prediction(accept_prediction)
+	review_candidates(review_candidates)
+	query_category(query_category)
+	generate_result(generate_result)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> validate_input;
+	accept_prediction -.-> generate_result;
+	accept_prediction -.-> query_category;
+	classify_text -.-> generate_result;
+	classify_text -.-> select_candidates;
+	parse_document -.-> generate_result;
+	parse_document -.-> prepare_text;
+	prepare_text -.-> classify_text;
+	prepare_text -.-> generate_result;
+	query_category -.-> generate_result;
+	read_text -.-> generate_result;
+	read_text -.-> prepare_text;
+	review_candidates -.-> generate_result;
+	review_candidates -.-> query_category;
+	select_candidates -.-> accept_prediction;
+	select_candidates -.-> generate_result;
+	select_candidates -.-> review_candidates;
+	validate_input -.-> generate_result;
+	validate_input -.-> parse_document;
+	validate_input -.-> read_text;
+	generate_result --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
+

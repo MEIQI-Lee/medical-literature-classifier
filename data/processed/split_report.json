@@ -1,0 +1,680 @@
+{
+  "source_file": "D:\\explore\\homework\\academic-classification-agent\\data\\processed\\cleaned.jsonl",
+  "random_state": 42,
+  "dataset_sha256": "8f05004b3454f949d9ba230e63c6980810de04f3cab698ae475b4a03dfebac26",
+  "test_size": 0.2,
+  "val_size": 0.1,
+  "balance": "none",
+  "label_count": 110,
+  "train_count_before_balance": 3811,
+  "train_count": 3811,
+  "val_count": 547,
+  "test_count": 1092,
+  "distribution": {
+    "R-33": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R11": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R12": {
+      "total": 46,
+      "train": 32,
+      "val": 5,
+      "test": 9
+    },
+    "R13": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R14": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R15": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R16": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R169": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R17": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R179": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R18": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R19": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R2-0": {
+      "total": 49,
+      "train": 34,
+      "val": 5,
+      "test": 10
+    },
+    "R2-5": {
+      "total": 40,
+      "train": 28,
+      "val": 4,
+      "test": 8
+    },
+    "R21": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R22": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R24": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R25": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R26": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R28": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R29": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R31": {
+      "total": 29,
+      "train": 20,
+      "val": 3,
+      "test": 6
+    },
+    "R32": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R33": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R36": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R37": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R38": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R392": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R394": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R395": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R44": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R45": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R47": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R48": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R49": {
+      "total": 48,
+      "train": 33,
+      "val": 5,
+      "test": 10
+    },
+    "R51": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R52": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R53": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R54": {
+      "total": 47,
+      "train": 33,
+      "val": 5,
+      "test": 9
+    },
+    "R55": {
+      "total": 49,
+      "train": 34,
+      "val": 5,
+      "test": 10
+    },
+    "R56": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R57": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R58": {
+      "total": 49,
+      "train": 34,
+      "val": 5,
+      "test": 10
+    },
+    "R59": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R599": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R602": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R604": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R605": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R608": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R61": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R62": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R63": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R64": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R65": {
+      "total": 49,
+      "train": 34,
+      "val": 5,
+      "test": 10
+    },
+    "R68": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R711": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R713": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R714": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R715": {
+      "total": 49,
+      "train": 34,
+      "val": 5,
+      "test": 10
+    },
+    "R717": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R726": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R729": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R73-3": {
+      "total": 49,
+      "train": 34,
+      "val": 5,
+      "test": 10
+    },
+    "R730": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R732": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R733": {
+      "total": 49,
+      "train": 34,
+      "val": 5,
+      "test": 10
+    },
+    "R734": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R735": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R736": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R737": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R738": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R741": {
+      "total": 49,
+      "train": 34,
+      "val": 5,
+      "test": 10
+    },
+    "R749": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R751": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R759": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R762": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R763": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R764": {
+      "total": 49,
+      "train": 34,
+      "val": 5,
+      "test": 10
+    },
+    "R765": {
+      "total": 49,
+      "train": 34,
+      "val": 5,
+      "test": 10
+    },
+    "R766": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R767": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R768": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R771": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R772": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R773": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R774": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R775": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R776": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R777": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R778": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R781": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R782": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R783": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R787": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R788": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R81": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R82": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R83": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R84": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R85": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R87": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R91": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R917": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R92": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R93": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R94": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R95": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R96": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R97": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "R99": {
+      "total": 50,
+      "train": 35,
+      "val": 5,
+      "test": 10
+    }
+  },
+  "warnings": [],
+  "train_file": "D:\\explore\\homework\\academic-classification-agent\\data\\train.jsonl",
+  "val_file": "D:\\explore\\homework\\academic-classification-agent\\data\\val.jsonl",
+  "test_file": "D:\\explore\\homework\\academic-classification-agent\\data\\test.jsonl",
+  "labels_file": "D:\\explore\\homework\\academic-classification-agent\\data\\labels.json"
+}

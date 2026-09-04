@@ -1,0 +1,58 @@
+{
+  "success": true,
+  "dataset_sha256": "8f05004b3454f949d9ba230e63c6980810de04f3cab698ae475b4a03dfebac26",
+  "checks": {
+    "raw_inputs_match_cleaning_run": true,
+    "artifact_versions_match": true,
+    "count_reconciles": true,
+    "cleaned_ids_unique": true,
+    "cleaned_inputs_unique": true,
+    "contiguous_label_ids": true,
+    "label_roundtrip": true,
+    "labels_cover_cleaned": true,
+    "split_content_matches_cleaned": true,
+    "split_union_equals_cleaned": true,
+    "train_reported_count_matches": true,
+    "train_all_classes_present": true,
+    "train_duplicates_allowed_only_in_oversampled_train": true,
+    "val_reported_count_matches": true,
+    "val_all_classes_present": true,
+    "val_duplicates_allowed_only_in_oversampled_train": true,
+    "test_reported_count_matches": true,
+    "test_all_classes_present": true,
+    "test_duplicates_allowed_only_in_oversampled_train": true,
+    "no_cross_split_leakage": true
+  },
+  "cross_split_overlap": {
+    "id:train-val": 0,
+    "id:train-test": 0,
+    "id:val-test": 0,
+    "model_input:train-val": 0,
+    "model_input:train-test": 0,
+    "model_input:val-test": 0,
+    "doi:train-val": 0,
+    "doi:train-test": 0,
+    "doi:val-test": 0,
+    "title_source:train-val": 0,
+    "title_source:train-test": 0,
+    "title_source:val-test": 0
+  },
+  "cleaned_count": 5450,
+  "label_count": 110,
+  "split_counts": {
+    "train": 3811,
+    "val": 547,
+    "test": 1092
+  },
+  "quantity_requirements": {
+    "at_least_100_classes": true,
+    "at_least_3000_records": true
+  },
+  "excluded_categories": [
+    "R-01",
+    "R-02",
+    "R-05",
+    "R-09"
+  ],
+  "note": "通过的是结构和数量校验，不代表弱标签正确或模型准确率已达标。"
+}

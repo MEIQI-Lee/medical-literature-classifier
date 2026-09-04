@@ -1,0 +1,80 @@
+{
+  "$defs": {
+    "ToolStep": {
+      "description": "Agent执行步骤(供前端过程展示)",
+      "properties": {
+        "step_id": {
+          "title": "Step Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "status": {
+          "default": "pending",
+          "title": "Status",
+          "type": "string"
+        },
+        "detail": {
+          "default": "",
+          "title": "Detail",
+          "type": "string"
+        },
+        "timestamp": {
+          "title": "Timestamp",
+          "type": "number"
+        }
+      },
+      "required": [
+        "step_id",
+        "name"
+      ],
+      "title": "ToolStep",
+      "type": "object"
+    }
+  },
+  "description": "Tool统一返回结构",
+  "properties": {
+    "success": {
+      "title": "Success",
+      "type": "boolean"
+    },
+    "data": {
+      "additionalProperties": true,
+      "title": "Data",
+      "type": "object"
+    },
+    "error": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Error"
+    },
+    "steps": {
+      "items": {
+        "$ref": "#/$defs/ToolStep"
+      },
+      "title": "Steps",
+      "type": "array"
+    },
+    "logs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Logs",
+      "type": "array"
+    }
+  },
+  "required": [
+    "success"
+  ],
+  "title": "ToolResult",
+  "type": "object"
+}

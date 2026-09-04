@@ -1,0 +1,73 @@
+{
+  "success": false,
+  "data": {
+    "request_id": "36e59355-2a4d-4bc0-acf0-481f476e4db4",
+    "prediction": {
+      "top1": null,
+      "topk": [],
+      "model_type": "demo-keywords-v1",
+      "checkpoint": null
+    },
+    "low_confidence": false,
+    "confidence_status": "unknown",
+    "confidence_threshold": null,
+    "display_mode": "error",
+    "message": "【演示模式】请输入需要分类的文本。",
+    "requested_top_k": 5,
+    "returned_top_k": 0,
+    "model_info": {
+      "model_version": "demo-keywords-v1",
+      "label_version": "demo-labels-v1",
+      "preprocess_version": "builtin-v1",
+      "label_ids": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "score_type": "probability",
+      "calibrated": false,
+      "mode": "demo"
+    },
+    "input": {
+      "source_type": "text",
+      "filename": null,
+      "pages": null,
+      "extracted_chars": 0,
+      "prepared_chars": 0,
+      "preparation_strategy": null,
+      "truncated": false,
+      "input_tokens": null
+    },
+    "warnings": [
+      {
+        "code": "DEMO_MODE",
+        "message": "当前使用模拟分类器及演示类别，结果不代表真实模型效果或 CLC 分类。"
+      }
+    ],
+    "duration_ms": 0.556,
+    "error_code": "EMPTY_TEXT"
+  },
+  "error": "请输入需要分类的文本。",
+  "steps": [
+    {
+      "step_id": "36e59355-2a4d-4bc0-acf0-481f476e4db4:1",
+      "name": "validate_input",
+      "status": "failed",
+      "detail": "请输入需要分类的文本。",
+      "timestamp": 1788491759.793042
+    },
+    {
+      "step_id": "36e59355-2a4d-4bc0-acf0-481f476e4db4:2",
+      "name": "generate_result",
+      "status": "done",
+      "detail": "结果整理完成",
+      "timestamp": 1788491759.793042
+    }
+  ],
+  "logs": [
+    "请输入需要分类的文本。",
+    "结果整理完成"
+  ]
+}

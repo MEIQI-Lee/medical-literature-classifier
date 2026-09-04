@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "request_id": "c2d4eede-d52d-45e2-938d-d272fb2de0bc",
+  "status": "success",
+  "mode": "demo",
+  "prediction": {
+    "rank": 1,
+    "label_id": 0,
+    "category_code": "DEMO_01",
+    "category_name": "演示类别：心血管相关",
+    "category_path": [
+      "演示分类",
+      "心血管相关"
+    ],
+    "score": 0.9681301354972951,
+    "confidence": 0.9681301354972951
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "label_id": 0,
+      "category_code": "DEMO_01",
+      "category_name": "演示类别：心血管相关",
+      "category_path": [
+        "演示分类",
+        "心血管相关"
+      ],
+      "score": 0.9681301354972951,
+      "confidence": 0.9681301354972951
+    },
+    {
+      "rank": 2,
+      "label_id": 1,
+      "category_code": "DEMO_02",
+      "category_name": "演示类别：肿瘤相关",
+      "category_path": [
+        "演示分类",
+        "肿瘤相关"
+      ],
+      "score": 0.007967466125676226,
+      "confidence": 0.007967466125676226
+    },
+    {
+      "rank": 3,
+      "label_id": 2,
+      "category_code": "DEMO_03",
+      "category_name": "演示类别：感染相关",
+      "category_path": [
+        "演示分类",
+        "感染相关"
+      ],
+      "score": 0.007967466125676226,
+      "confidence": 0.007967466125676226
+    },
+    {
+      "rank": 4,
+      "label_id": 3,
+      "category_code": "DEMO_04",
+      "category_name": "演示类别：神经相关",
+      "category_path": [
+        "演示分类",
+        "神经相关"
+      ],
+      "score": 0.007967466125676226,
+      "confidence": 0.007967466125676226
+    },
+    {
+      "rank": 5,
+      "label_id": 4,
+      "category_code": "DEMO_05",
+      "category_name": "演示类别：消化相关",
+      "category_path": [
+        "演示分类",
+        "消化相关"
+      ],
+      "score": 0.007967466125676226,
+      "confidence": 0.007967466125676226
+    }
+  ],
+  "confidence_status": "normal",
+  "confidence_threshold": 0.6,
+  "requested_top_k": 5,
+  "returned_top_k": 5,
+  "display_mode": "top1",
+  "message": "【演示模式】分类完成。",
+  "model_info": {
+    "model_version": "demo-keywords-v1",
+    "label_version": "demo-labels-v1",
+    "preprocess_version": "builtin-v1",
+    "label_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "score_type": "probability",
+    "calibrated": false,
+    "mode": "demo"
+  },
+  "input": {
+    "source_type": "text",
+    "filename": null,
+    "pages": null,
+    "extracted_chars": 21,
+    "prepared_chars": 21,
+    "preparation_strategy": "free_text",
+    "truncated": false,
+    "input_tokens": null
+  },
+  "steps": [
+    {
+      "request_id": "c2d4eede-d52d-45e2-938d-d272fb2de0bc",
+      "sequence": 1,
+      "step": "validate_input",
+      "status": "success",
+      "duration_ms": 0.005,
+      "message": "输入校验完成"
+    },
+    {
+      "request_id": "c2d4eede-d52d-45e2-938d-d272fb2de0bc",
+      "sequence": 2,
+      "step": "read_text",
+      "status": "success",
+      "duration_ms": 0.006,
+      "message": "读取文本完成，共 21 字符"
+    },
+    {
+      "request_id": "c2d4eede-d52d-45e2-938d-d272fb2de0bc",
+      "sequence": 3,
+      "step": "prepare_text",
+      "status": "success",
+      "duration_ms": 0.02,
+      "message": "文本整理完成，有效字符数为 21"
+    },
+    {
+      "request_id": "c2d4eede-d52d-45e2-938d-d272fb2de0bc",
+      "sequence": 4,
+      "step": "classify_text",
+      "status": "success",
+      "duration_ms": 0.056,
+      "message": "模型推理完成"
+    },
+    {
+      "request_id": "c2d4eede-d52d-45e2-938d-d272fb2de0bc",
+      "sequence": 5,
+      "step": "select_candidates",
+      "status": "success",
+      "duration_ms": 0.004,
+      "message": "候选排序与置信度判断完成"
+    },
+    {
+      "request_id": "c2d4eede-d52d-45e2-938d-d272fb2de0bc",
+      "sequence": 6,
+      "step": "accept_prediction",
+      "status": "success",
+      "duration_ms": 0.003,
+      "message": "突出显示首选类别，同时保留候选列表"
+    },
+    {
+      "request_id": "c2d4eede-d52d-45e2-938d-d272fb2de0bc",
+      "sequence": 7,
+      "step": "query_category",
+      "status": "success",
+      "duration_ms": 0.034,
+      "message": "已补全 5 个类别的编码与名称"
+    },
+    {
+      "request_id": "c2d4eede-d52d-45e2-938d-d272fb2de0bc",
+      "sequence": 8,
+      "step": "generate_result",
+      "status": "success",
+      "duration_ms": 0.003,
+      "message": "结果整理完成"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "DEMO_MODE",
+      "message": "当前使用模拟分类器及演示类别，结果不代表真实模型效果或 CLC 分类。"
+    },
+    {
+      "code": "UNCALIBRATED_PROBABILITY",
+      "message": "模型概率尚未校准，不能视为实际正确率。"
+    }
+  ],
+  "duration_ms": 1.628,
+  "error": null
+}

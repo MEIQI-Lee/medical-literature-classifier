@@ -1,0 +1,12 @@
+{
+  "version": "demo-labels-v1",
+  "category_version": "demo-categories-v1",
+  "labels": [
+    {"label_id": 0, "category_code": "DEMO_01"},
+    {"label_id": 1, "category_code": "DEMO_02"},
+    {"label_id": 2, "category_code": "DEMO_03"},
+    {"label_id": 3, "category_code": "DEMO_04"},
+    {"label_id": 4, "category_code": "DEMO_05"}
+  ]
+}
+

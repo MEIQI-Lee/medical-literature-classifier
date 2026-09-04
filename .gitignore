@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+.DS_Store
+.env
+logs/
+model/checkpoints/
+model/pretrained/
+.deps/
+.idea/
+crawler/cookie.json
+crawler/session_state.json

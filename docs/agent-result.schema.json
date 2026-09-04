@@ -1,0 +1,428 @@
+{
+  "$defs": {
+    "Candidate": {
+      "additionalProperties": false,
+      "properties": {
+        "rank": {
+          "title": "Rank",
+          "type": "integer"
+        },
+        "label_id": {
+          "title": "Label Id",
+          "type": "integer"
+        },
+        "category_code": {
+          "title": "Category Code",
+          "type": "string"
+        },
+        "category_name": {
+          "title": "Category Name",
+          "type": "string"
+        },
+        "category_path": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Category Path",
+          "type": "array"
+        },
+        "score": {
+          "title": "Score",
+          "type": "number"
+        },
+        "confidence": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Confidence"
+        }
+      },
+      "required": [
+        "rank",
+        "label_id",
+        "category_code",
+        "category_name",
+        "category_path",
+        "score",
+        "confidence"
+      ],
+      "title": "Candidate",
+      "type": "object"
+    },
+    "ErrorInfo": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "step": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Step"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "title": "ErrorInfo",
+      "type": "object"
+    },
+    "InputSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "source_type": {
+          "title": "Source Type",
+          "type": "string"
+        },
+        "filename": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Filename"
+        },
+        "pages": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Pages"
+        },
+        "extracted_chars": {
+          "default": 0,
+          "title": "Extracted Chars",
+          "type": "integer"
+        },
+        "prepared_chars": {
+          "default": 0,
+          "title": "Prepared Chars",
+          "type": "integer"
+        },
+        "preparation_strategy": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Preparation Strategy"
+        },
+        "truncated": {
+          "default": false,
+          "title": "Truncated",
+          "type": "boolean"
+        },
+        "input_tokens": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Input Tokens"
+        }
+      },
+      "required": [
+        "source_type"
+      ],
+      "title": "InputSummary",
+      "type": "object"
+    },
+    "ModelInfo": {
+      "additionalProperties": false,
+      "properties": {
+        "model_version": {
+          "minLength": 1,
+          "title": "Model Version",
+          "type": "string"
+        },
+        "label_version": {
+          "minLength": 1,
+          "title": "Label Version",
+          "type": "string"
+        },
+        "preprocess_version": {
+          "minLength": 1,
+          "title": "Preprocess Version",
+          "type": "string"
+        },
+        "label_ids": {
+          "items": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "minItems": 2,
+          "title": "Label Ids",
+          "type": "array"
+        },
+        "score_type": {
+          "enum": [
+            "probability",
+            "decision_score"
+          ],
+          "title": "Score Type",
+          "type": "string"
+        },
+        "calibrated": {
+          "default": false,
+          "title": "Calibrated",
+          "type": "boolean"
+        },
+        "mode": {
+          "default": "model",
+          "enum": [
+            "model",
+            "demo"
+          ],
+          "title": "Mode",
+          "type": "string"
+        }
+      },
+      "required": [
+        "model_version",
+        "label_version",
+        "preprocess_version",
+        "label_ids",
+        "score_type"
+      ],
+      "title": "ModelInfo",
+      "type": "object"
+    },
+    "StepInfo": {
+      "additionalProperties": false,
+      "properties": {
+        "request_id": {
+          "title": "Request Id",
+          "type": "string"
+        },
+        "sequence": {
+          "title": "Sequence",
+          "type": "integer"
+        },
+        "step": {
+          "title": "Step",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "running",
+            "success",
+            "error"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "duration_ms": {
+          "default": 0,
+          "title": "Duration Ms",
+          "type": "number"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "request_id",
+        "sequence",
+        "step",
+        "status",
+        "message"
+      ],
+      "title": "StepInfo",
+      "type": "object"
+    },
+    "WarningInfo": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "title": "WarningInfo",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "request_id": {
+      "title": "Request Id",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "success",
+        "error"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "mode": {
+      "enum": [
+        "model",
+        "demo"
+      ],
+      "title": "Mode",
+      "type": "string"
+    },
+    "prediction": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Candidate"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "candidates": {
+      "items": {
+        "$ref": "#/$defs/Candidate"
+      },
+      "title": "Candidates",
+      "type": "array"
+    },
+    "confidence_status": {
+      "default": "unknown",
+      "enum": [
+        "normal",
+        "low",
+        "unknown"
+      ],
+      "title": "Confidence Status",
+      "type": "string"
+    },
+    "confidence_threshold": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Confidence Threshold"
+    },
+    "requested_top_k": {
+      "default": 5,
+      "title": "Requested Top K",
+      "type": "integer"
+    },
+    "returned_top_k": {
+      "default": 0,
+      "title": "Returned Top K",
+      "type": "integer"
+    },
+    "display_mode": {
+      "enum": [
+        "top1",
+        "candidates",
+        "error"
+      ],
+      "title": "Display Mode",
+      "type": "string"
+    },
+    "message": {
+      "title": "Message",
+      "type": "string"
+    },
+    "model_info": {
+      "$ref": "#/$defs/ModelInfo"
+    },
+    "input": {
+      "$ref": "#/$defs/InputSummary"
+    },
+    "steps": {
+      "items": {
+        "$ref": "#/$defs/StepInfo"
+      },
+      "title": "Steps",
+      "type": "array"
+    },
+    "warnings": {
+      "items": {
+        "$ref": "#/$defs/WarningInfo"
+      },
+      "title": "Warnings",
+      "type": "array"
+    },
+    "duration_ms": {
+      "title": "Duration Ms",
+      "type": "number"
+    },
+    "error": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ErrorInfo"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "request_id",
+    "status",
+    "mode",
+    "display_mode",
+    "message",
+    "model_info",
+    "input",
+    "steps",
+    "duration_ms"
+  ],
+  "title": "AgentResult",
+  "type": "object"
+}

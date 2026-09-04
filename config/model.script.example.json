@@ -1,0 +1,14 @@
+{
+  "labels_path": "../labels.json",
+  "categories_path": "../category_mapping.json",
+  "model": {
+    "kind": "script",
+    "command": ["{python}", "model/predict.py"],
+    "checkpoint_path": "../model/checkpoints/classifier",
+    "cwd": "..",
+    "timeout_seconds": 60
+  },
+  "preprocessor_factory": "preprocess.clean:create_preprocessor",
+  "agent": {"top_k": 5, "confidence": null}
+}
+

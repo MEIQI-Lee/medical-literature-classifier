@@ -1,0 +1,155 @@
+{
+  "success": true,
+  "data": {
+    "request_id": "d48ef102-d53a-4bc3-b38b-9998e2a0b6c7",
+    "prediction": {
+      "top1": {
+        "code": "DEMO_01",
+        "name": "演示类别：心血管相关",
+        "confidence": 0.9681301354972951
+      },
+      "topk": [
+        {
+          "code": "DEMO_01",
+          "name": "演示类别：心血管相关",
+          "confidence": 0.9681301354972951
+        },
+        {
+          "code": "DEMO_02",
+          "name": "演示类别：肿瘤相关",
+          "confidence": 0.007967466125676226
+        },
+        {
+          "code": "DEMO_03",
+          "name": "演示类别：感染相关",
+          "confidence": 0.007967466125676226
+        },
+        {
+          "code": "DEMO_04",
+          "name": "演示类别：神经相关",
+          "confidence": 0.007967466125676226
+        },
+        {
+          "code": "DEMO_05",
+          "name": "演示类别：消化相关",
+          "confidence": 0.007967466125676226
+        }
+      ],
+      "model_type": "demo-keywords-v1",
+      "checkpoint": null
+    },
+    "low_confidence": false,
+    "confidence_status": "normal",
+    "confidence_threshold": 0.6,
+    "display_mode": "top1",
+    "message": "【演示模式】分类完成。",
+    "requested_top_k": 5,
+    "returned_top_k": 5,
+    "model_info": {
+      "model_version": "demo-keywords-v1",
+      "label_version": "demo-labels-v1",
+      "preprocess_version": "builtin-v1",
+      "label_ids": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "score_type": "probability",
+      "calibrated": false,
+      "mode": "demo"
+    },
+    "input": {
+      "source_type": "text",
+      "filename": null,
+      "pages": null,
+      "extracted_chars": 21,
+      "prepared_chars": 21,
+      "preparation_strategy": "free_text",
+      "truncated": false,
+      "input_tokens": null
+    },
+    "warnings": [
+      {
+        "code": "DEMO_MODE",
+        "message": "当前使用模拟分类器及演示类别，结果不代表真实模型效果或 CLC 分类。"
+      },
+      {
+        "code": "UNCALIBRATED_PROBABILITY",
+        "message": "模型概率尚未校准，不能视为实际正确率。"
+      }
+    ],
+    "duration_ms": 3.892,
+    "error_code": null
+  },
+  "error": null,
+  "steps": [
+    {
+      "step_id": "d48ef102-d53a-4bc3-b38b-9998e2a0b6c7:1",
+      "name": "validate_input",
+      "status": "done",
+      "detail": "输入校验完成",
+      "timestamp": 1788491759.792448
+    },
+    {
+      "step_id": "d48ef102-d53a-4bc3-b38b-9998e2a0b6c7:2",
+      "name": "read_text",
+      "status": "done",
+      "detail": "读取文本完成，共 21 字符",
+      "timestamp": 1788491759.792449
+    },
+    {
+      "step_id": "d48ef102-d53a-4bc3-b38b-9998e2a0b6c7:3",
+      "name": "prepare_text",
+      "status": "done",
+      "detail": "文本整理完成，有效字符数为 21",
+      "timestamp": 1788491759.79245
+    },
+    {
+      "step_id": "d48ef102-d53a-4bc3-b38b-9998e2a0b6c7:4",
+      "name": "classify_text",
+      "status": "done",
+      "detail": "模型推理完成",
+      "timestamp": 1788491759.7924511
+    },
+    {
+      "step_id": "d48ef102-d53a-4bc3-b38b-9998e2a0b6c7:5",
+      "name": "select_candidates",
+      "status": "done",
+      "detail": "候选排序与置信度判断完成",
+      "timestamp": 1788491759.7924511
+    },
+    {
+      "step_id": "d48ef102-d53a-4bc3-b38b-9998e2a0b6c7:6",
+      "name": "accept_prediction",
+      "status": "done",
+      "detail": "突出显示首选类别，同时保留候选列表",
+      "timestamp": 1788491759.792452
+    },
+    {
+      "step_id": "d48ef102-d53a-4bc3-b38b-9998e2a0b6c7:7",
+      "name": "query_category",
+      "status": "done",
+      "detail": "已补全 5 个类别的编码与名称",
+      "timestamp": 1788491759.792452
+    },
+    {
+      "step_id": "d48ef102-d53a-4bc3-b38b-9998e2a0b6c7:8",
+      "name": "generate_result",
+      "status": "done",
+      "detail": "结果整理完成",
+      "timestamp": 1788491759.792453
+    }
+  ],
+  "logs": [
+    "输入校验完成",
+    "读取文本完成，共 21 字符",
+    "文本整理完成，有效字符数为 21",
+    "模型推理完成",
+    "候选排序与置信度判断完成",
+    "突出显示首选类别，同时保留候选列表",
+    "已补全 5 个类别的编码与名称",
+    "结果整理完成"
+  ]
+}

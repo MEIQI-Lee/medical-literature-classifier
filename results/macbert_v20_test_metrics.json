@@ -1,0 +1,15 @@
+{
+  "accuracy": 0.7023809523809523,
+  "precision_macro": 0.7168081453368534,
+  "recall_macro": 0.7001515151515152,
+  "f1_macro": 0.6968194946798072,
+  "f1_micro": 0.7023809523809523,
+  "model_type": "macbert",
+  "checkpoint": "model/checkpoints/macbert_v20/best",
+  "test_file": "data/test.jsonl",
+  "sample_count": 1092,
+  "inference_time_ms": 7810.019,
+  "inference_time_per_sample_ms": 7.152,
+  "model_size_mb": 391.005,
+  "confusion_matrix_path": "/root/autodl-tmp/academic-classification-agent/results/macbert_v20_test_confusion_matrix.png"
+}

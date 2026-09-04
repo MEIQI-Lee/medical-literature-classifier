@@ -1,0 +1,15 @@
+{
+  "accuracy": 0.7106227106227107,
+  "precision_macro": 0.7195068181966577,
+  "recall_macro": 0.7089898989898991,
+  "f1_macro": 0.7035554108486413,
+  "f1_micro": 0.7106227106227107,
+  "model_type": "medbert",
+  "checkpoint": "model/checkpoints/medbert_v20/best",
+  "test_file": "data/test.jsonl",
+  "sample_count": 1092,
+  "inference_time_ms": 4565.249,
+  "inference_time_per_sample_ms": 4.1806,
+  "model_size_mb": 391.005,
+  "confusion_matrix_path": "/root/autodl-tmp/academic-classification-agent/results/medbert_v20_test_confusion_matrix.png"
+}
