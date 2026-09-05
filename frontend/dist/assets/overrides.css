@@ -1,0 +1,33 @@
+/* Final visual corrections kept separate from the generated design system. */
+.horizontal-bars .bar-fill {
+  display: block;
+  min-width: 2px;
+}
+
+.upload-zone.has-file {
+  align-items: flex-start;
+  justify-content: center;
+  gap: 14px;
+  padding: 28px;
+  border-style: solid;
+  border-color: var(--teal);
+  background: var(--teal-pale);
+}
+
+.upload-zone.has-file .file-glyph {
+  flex: 0 0 auto;
+  background: var(--surface);
+  color: var(--teal);
+}
+
+.upload-copy { display: grid; gap: 4px; text-align: center; }
+.upload-zone.has-file .upload-copy { text-align: left; min-width: 0; }
+.upload-zone.has-file #upload-title::before { content: ""; display: inline-block; width: 7px; height: 7px; margin-right: 7px; border-radius: 50%; background: var(--teal); }
+.upload-zone.has-file #file-name { color: var(--navy); font-weight: 700; overflow-wrap: anywhere; }
+.file-detail { color: var(--muted); font-family: var(--mono); font-size: 10px; }
+
+.status-tag.working { color: var(--teal); background: var(--teal-pale); }
+.status-tag.failed { color: #9e3f35; background: #f8e8e4; }
+.workflow li.running > span { background: var(--teal); color: white; animation: workflow-pulse 1.2s ease-in-out infinite; }
+.workflow li.done > span { background: var(--teal); color: white; }
+@keyframes workflow-pulse { 50% { transform: scale(1.12); opacity: .7; } }

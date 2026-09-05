@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="医学文献智能分类系统：分类、执行过程与模型实验分析" />
+    <meta name="theme-color" content="#12314A" />
+    <title>MEDINDEX · 医学文献智能分类</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/overrides.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="返回系统首页">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.5h9l3 3v14H6zM15 3.5v4h3M9 11h6M9 14h6M9 17h4"/></svg></span>
+        <span><strong>MEDINDEX</strong><small>医学文献智能分类</small></span>
+      </a>
+      <nav aria-label="主导航"><a class="active" href="#classify">分类工作台</a><a href="#process">执行过程</a><a href="#statistics">数据分析</a></nav>
+      <span id="health" class="health"><i></i>正在检查服务</span>
+    </header>
+    <main id="main-content">
+      <section id="top" class="hero reveal">
+        <div class="hero-copy">
+          <p class="section-label">MEDICAL LITERATURE INTELLIGENCE</p>
+          <h1>医学文献，<br /><em>准确归类</em></h1>
+          <p>输入摘要、标题或上传文档。系统将依次解析内容、整理文本、调用 MedBERT 模型，并返回《中国图书馆分类法》R 类候选结果。</p>
+          <a class="primary-link" href="#classify">开始分类 <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-map" aria-label="医学文献智能分类示意图">
+          <div class="paper-preview"><span>原始文献</span><strong>Abstract</strong><p>Cardiovascular risk factors and clinical intervention outcomes in patients with hypertension.</p><b></b><b></b><b></b></div>
+          <div class="map-core"><span>AI</span><small>智能分类</small></div>
+          <div class="taxonomy"><p>医学文献分类体系</p><div><span>R54</span> 心脏、血管疾病</div><div><span>R58</span> 内分泌及代谢病</div><div><span>R59</span> 全身性疾病</div></div>
+        </div>
+        <dl class="hero-facts"><div><dt>5,450</dt><dd>清洗后文献</dd></div><div><dt>110</dt><dd>可预测类别</dd></div><div><dt>71.1%</dt><dd>历史测试准确率</dd></div></dl>
+      </section>
+      <section id="classify" class="workbench section reveal" aria-labelledby="workbench-title">
+        <div class="section-intro"><div><p class="section-label">CLASSIFICATION WORKBENCH</p><h2 id="workbench-title">文献分类工作台</h2></div><p>选择输入方式，提交后在右侧查看预测结果和候选类别。</p></div>
+        <div class="workbench-grid">
+          <article class="input-surface">
+            <div class="surface-heading"><div><p class="surface-kicker">01 / 输入内容</p><h3>待分类文献</h3></div><button id="clear-text" class="text-button" type="button">清空内容</button></div>
+            <div class="mode-tabs" role="tablist" aria-label="输入方式"><button class="mode-tab active" type="button" role="tab" aria-selected="true" aria-controls="text-form" data-mode="text">文本输入</button><button class="mode-tab" type="button" role="tab" aria-selected="false" aria-controls="file-form" data-mode="file">文件上传</button></div>
+            <form id="text-form" class="source-form"><label for="text-input">文献内容</label><textarea id="text-input" minlength="10" placeholder="粘贴论文标题、关键词、摘要或正文。">分析高血压患者的心血管危险因素与治疗效果，并探讨综合干预对预后指标的影响。</textarea><div class="input-meta"><span id="text-count">0 / 200,000</span><span>建议包含标题、关键词和摘要</span></div><div class="form-actions"><label class="select-label">候选数量<select id="text-topk"><option>3</option><option selected>5</option><option>10</option></select></label><button class="primary-button" type="submit">开始分类 <span aria-hidden="true">→</span></button></div></form>
+            <form id="file-form" class="source-form hidden" hidden><label id="upload-zone" for="file-input" class="upload-zone"><span class="file-glyph" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 16V4m0 0-4 4m4-4 4 4M5 14v5h14v-5"/></svg></span><span class="upload-copy"><strong id="upload-title">选择或拖入文献文件</strong><small id="file-name">支持 TXT、PDF、DOCX，最大 10 MiB</small><small id="file-detail" class="file-detail" hidden></small></span><input id="file-input" type="file" accept=".txt,.pdf,.docx" /></label><div class="form-actions"><label class="select-label">候选数量<select id="file-topk"><option>3</option><option selected>5</option><option>10</option></select></label><button class="primary-button" type="submit">上传并分类 <span aria-hidden="true">→</span></button></div></form>
+            <p id="request-message" class="request-message" role="status" aria-live="polite">模型分数反映本次预测的相对置信度，不等同于实际正确率。</p>
+          </article>
+          <article id="result-section" class="result-surface is-empty" aria-live="polite">
+            <div class="surface-heading"><div><p class="surface-kicker">02 / 分类结果</p><h3>预测类别</h3></div><span id="result-status" class="status-tag">等待输入</span></div>
+            <div class="result-topline"><div><span>主分类代码</span><strong id="top1-code">—</strong></div><div class="result-name"><span>主分类名称</span><h4 id="top1-name">提交内容后显示预测结果</h4></div></div>
+            <div class="confidence-block"><div><span>模型置信度</span><strong id="confidence-number">—</strong></div><div class="confidence-track"><i id="confidence-fill"></i></div><p id="result-message">尚未收到分类结果。</p></div>
+            <div class="candidate-heading"><span>候选类别</span><small id="candidate-count">Top-K</small></div><ol id="topk-list" class="candidate-list"><li><b>—</b><span>暂无候选结果</span><em>—</em></li></ol><div id="metadata" class="result-metadata"></div>
+          </article>
+        </div>
+      </section>
+      <section id="process" class="process-section section reveal" aria-labelledby="process-title">
+        <div class="section-intro"><div><p class="section-label">AGENT WORKFLOW</p><h2 id="process-title">智能体执行过程</h2></div><p id="duration">任务提交后将展示每一步的处理状态。</p></div>
+        <ol id="steps-list" class="workflow"><li class="pending"><span>1</span><div><strong>等待任务</strong><small>提交文本或文件后开始执行</small></div></li><li class="pending"><span>2</span><div><strong>解析内容</strong><small>读取文本或提取文档内容</small></div></li><li class="pending"><span>3</span><div><strong>调用模型</strong><small>整理字段并执行预测</small></div></li><li class="pending"><span>4</span><div><strong>生成结果</strong><small>返回类别和候选分数</small></div></li></ol>
+      </section>
+      <section id="statistics" class="analytics section reveal" aria-labelledby="analytics-title">
+        <div class="section-intro"><div><p class="section-label">DATA & MODEL ANALYSIS</p><h2 id="analytics-title">数据与模型分析</h2></div><p>来自已生成的数据报告与历史测试集，不会触发重新训练。</p></div>
+        <div id="summary-cards" class="summary-grid"><div class="metric-skeleton"></div><div class="metric-skeleton"></div><div class="metric-skeleton"></div><div class="metric-skeleton"></div></div>
+        <div class="chart-grid"><article class="chart-panel length-panel"><div class="panel-title"><div><h3>文献长度分布</h3><p>按字符数统计</p></div></div><div id="length-chart" class="horizontal-bars"></div></article><article class="chart-panel category-panel"><div class="panel-title"><div><h3>类别样本分布</h3><p>样本量前 8 的类别</p></div></div><div id="category-chart" class="vertical-bars"></div></article><article class="chart-panel comparison-panel"><div class="panel-title"><div><h3>模型实验对比</h3><p>同一历史测试集，1,092 条样本</p></div></div><div class="table-scroll"><table><thead><tr><th>模型</th><th>Accuracy</th><th>Macro-F1</th><th>单样本推理</th></tr></thead><tbody id="metrics-table"></tbody></table></div><p class="table-note">在线分类固定使用 MedBERT v20。</p></article><article class="chart-panel matrix-panel"><div class="panel-title"><div><h3>混淆矩阵</h3><p>MedBERT v20，前 12 个标签的局部视图</p></div><span class="matrix-legend">低 <i></i> 高</span></div><div class="matrix-scroll"><div id="confusion-matrix" class="matrix" aria-label="混淆矩阵"></div></div></article></div>
+        <aside class="quality-note"><span class="quality-mark" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 12 4 4 8-8"/></svg></span><div><strong>数据质量说明</strong><p>文献经过字段规范、冲突标签隔离与质量检查；统计结果保留在当前项目报告中。</p></div></aside>
+      </section>
+    </main>
+    <footer><span>MEDINDEX</span><span>医学文献智能分类系统</span><span>完成人：南开大学 李美奇，杨郁熙，张家睿，徐普，纪林圣</span></footer>
+    <script src="/assets/app.js" defer></script>
+  </body>
+</html>
