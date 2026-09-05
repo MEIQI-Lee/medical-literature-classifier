@@ -1,6 +1,6 @@
 # 医学文献智能分类系统
 
-面向《中国图书馆分类法》（CLC）R 类医学文献的端到端分类项目。系统覆盖知网文献采集、数据清洗与分层划分、中文预训练模型微调与评估、LangGraph 分类工作流、FastAPI 服务和可视化前端，可接收医学文本或 TXT、PDF、DOCX 文档并返回 Top-K 分类候选、置信度状态与完整执行步骤。
+面向《中国图书馆分类法》（CLC）R 类医学文献的端到端分类项目。系统覆盖知网文献采集、数据清洗与分层划分、中文预训练模型微调与评估、LangGraph 分类工作流、FastAPI 服务和可视化前端，可接收医学文本或 TXT、PDF、DOCX 文档，返回 Top-K 分类候选、置信度状态与完整执行步骤。
 
 ## 项目概览
 
@@ -14,11 +14,13 @@ flowchart LR
     E --> G[FastAPI + Web UI]
 ```
 
-主要特性：
+整体流水线分为离线（采集 / 清洗 / 训练）和在线（Agent / Web 服务）两部分，二者严格解耦：在线推理不会触发采集或训练，服务启动不会隐式加载真实模型权重。
+
+### 主要特性
 
 - 覆盖 CLC 医学类目，统一维护类别编码、名称和模型标签映射；
-- 支持纯文本、结构化论文信息以及 TXT、PDF、DOCX 文件；
-- 使用 LangGraph 编排输入校验、文档解析、文本预处理、模型推理、候选选择和结果生成；
+- 支持纯文本、结构化论文信息（title / keywords / abstract）以及 TXT、PDF、DOCX 文件；
+- 使用 LangGraph 编排输入校验、文档解析、文本预处理、模型推理、候选选择和结果生成，工作流显式可追溯；
 - 对低置信度结果展示多个候选，不将不确定预测伪装为确定结论；
 - 在线推理与离线采集、清洗、训练解耦，服务启动不会隐式训练模型；
 - 提供数据质量报告、模型指标、混淆矩阵和可追踪的步骤日志；
@@ -82,6 +84,8 @@ pip install -r requirements-offline.txt
 pip install -e ".[dev]"
 ```
 
+依赖按 `pyproject.toml` 的 optional-dependencies 分组：`dev`（pytest / ruff）、`web`（FastAPI / uvicorn / python-multipart）、`model`（torch 2.7.1 / transformers 4.53.2 / numpy 1.26.4）、`training`（scikit-learn / matplotlib / seaborn）、`crawler`（selenium / webdriver-manager / beautifulsoup4 / pandas / loguru）。
+
 ### 2. 无模型快速体验
 
 演示分类器使用固定关键词规则，只用于验证工作流与接口，不代表真实模型效果：
@@ -123,6 +127,69 @@ python -m backend.main
 
 > 如果真实 checkpoint 不存在，基础健康检查仍可返回成功，但实际分类以及 `GET /api/health?check_model=true` 会报告模型未就绪。
 
+## LangGraph 分类工作流
+
+工作流定义在 `agent/graph.py`，使用显式边路由便于检查、测试和展示。节点与路由如下：
+
+```mermaid
+flowchart TD
+    S([START]) --> validate_input
+    validate_input -->|file| parse_document
+    validate_input -->|text/paper| read_text
+    validate_input -->|error| generate_result
+    parse_document --> prepare_text
+    read_text --> prepare_text
+    prepare_text --> classify_text
+    classify_text --> select_candidates
+    select_candidates -->|normal| accept_prediction
+    select_candidates -->|low/unknown| review_candidates
+    select_candidates -->|error| generate_result
+    accept_prediction --> query_category
+    review_candidates --> query_category
+    query_category --> generate_result
+    generate_result --> E([END])
+```
+
+节点职责：
+
+| 节点 | 职责 |
+| --- | --- |
+| `validate_input` | 校验输入类型与长度，失败时写入 error 并直接走 `generate_result` |
+| `parse_document` | 解析 TXT / PDF / DOCX，抽取纯文本与字段，记录页数与警告 |
+| `read_text` | 读取纯文本或结构化论文字段（title / keywords / abstract） |
+| `prepare_text` | 根据输入来源选择构造策略（`free_text` / `structured_fields` / `document_fields` / `document_fulltext`） |
+| `classify_text` | 调用模型适配器得到 logits / 概率分布，产出 `ModelOutput` |
+| `select_candidates` | 取 Top-K 候选并应用置信度策略，决定 `confidence_status` |
+| `accept_prediction` | 高置信度分支，确定首选分类 |
+| `review_candidates` | 低置信度分支，保留多候选供人工复核 |
+| `query_category` | 把 label_id 映射为类别编码、名称与完整层级路径 |
+| `generate_result` | 汇总为 `AgentResult`，记录耗时与全部步骤 |
+
+### 置信度策略
+
+`confidence_status` 取 `normal` / `low` / `unknown`，对应 `display_mode` 为 `top1` / `candidates` / `error`。默认阈值 0.6（见 `config.py` 的 `AGENT_CONFIG`），低于阈值时不输出单一结论，而是返回多个候选并标注低置信度，避免把不确定预测伪装为确定结论。`ConfidencePolicy` 与模型版本绑定，不假设通用阈值。
+
+## 输出结构
+
+分类结果遵循 `agent/schemas.py` 中的 `AgentResult` 协议，关键字段：
+
+| 字段 | 说明 |
+| --- | --- |
+| `status` | `success` / `error` |
+| `mode` | `model`（真实模型）/ `demo`（关键词演示） |
+| `prediction` | 首选候选 `Candidate`，低置信度时为 `null` |
+| `candidates` | Top-K 候选列表，每项含 `rank`、`label_id`、`category_code`、`category_name`、`category_path`、`score`、`confidence` |
+| `confidence_status` | `normal` / `low` / `unknown` |
+| `display_mode` | `top1` / `candidates` / `error` |
+| `model_info` | 模型版本、标签版本、预处理版本、`label_ids`、`score_type`、`calibrated`、`mode` |
+| `input` | 输入摘要：来源类型、文件名、页数、抽取/准备后字符数、是否截断、token 数 |
+| `steps` | 全部工作流步骤，每步含 `sequence`、`step`、`status`、`duration_ms`、`message` |
+| `warnings` | 非致命警告列表 |
+| `duration_ms` | 总耗时 |
+| `error` | 错误信息（`code` / `message` / `step`） |
+
+决策分数（`score_type=decision_score`）不一定是概率，不会按百分比格式化输出。
+
 ## CLI 用法
 
 输入方式必须选择一个：
@@ -151,7 +218,7 @@ python -m agent --demo --graph
 python -m agent --demo --text "肺部影像学检查" --trace-file logs/agent.jsonl
 ```
 
-自定义模型可参考 `config/model.python.example.json` 和 `config/model.script.example.json`。详细适配协议见 `docs/integration.md`。
+`--steps` 将每个工作流步骤以 JSON 实时输出到 stderr，`--trace-file` 把最终结果追加保存为 JSONL 日志。自定义模型可参考 `config/model.python.example.json` 和 `config/model.script.example.json`，详细适配协议见 `docs/integration.md`。
 
 ## HTTP API
 
@@ -160,7 +227,7 @@ python -m agent --demo --text "肺部影像学检查" --trace-file logs/agent.js
 | `GET` | `/api/health` | 服务健康检查；传 `check_model=true` 可检查真实模型 |
 | `POST` | `/api/classify` | 对文本进行分类 |
 | `POST` | `/api/classify/stream` | 以 SSE 返回文本分类步骤与结果 |
-| `POST` | `/api/classify/file` | 上传并分类 TXT、PDF 或 DOCX，最大 10 MiB |
+| `POST` | `/api/classify/file` | 上传并分类 TXT、PDF、DOCX，最大 10 MiB |
 | `POST` | `/api/classify/file/stream` | 以 SSE 返回文件解析与分类进度 |
 | `POST` | `/api/agent/run` | 通用 Agent 调用入口 |
 | `GET` | `/api/statistics` | 返回数据集与清洗统计 |
@@ -182,6 +249,10 @@ curl -X POST "http://127.0.0.1:8000/api/classify/file?top_k=5" \
 ```
 
 返回结果包含首选分类、Top-K 候选、置信度状态、模型信息、输入摘要、警告及各工作流步骤。服务不会在结果中保存或回传原始文档正文。
+
+### HTTP 状态码映射
+
+后端根据 `AgentResult` 映射状态码：成功返回 `200`；`FILE_TOO_LARGE` 返回 `413`；`MODEL_NOT_READY` 返回 `503`；输入类错误（`EMPTY_TEXT` / `TEXT_TOO_SHORT` / `INVALID_INPUT` / `UNSUPPORTED_FILE_TYPE` / `NO_EXTRACTABLE_TEXT`）返回 `422`；其他错误返回 `500`。SSE 端点通过 `event: step` / `event: result` 推送步骤和最终结果，便于前端实时展示进度。
 
 ## 数据处理
 
@@ -214,6 +285,19 @@ python run_preprocess.py \
 
 更完整的数据约定与导入流程见 `preprocess/README.md`。
 
+### 清洗规则
+
+`preprocess/clean.py` 对原始知网记录执行以下处理：
+
+- **HTML 清理**：仅删除明确标签（保留 `P<0.05`、`P>0.05` 等医学表达，不误判为标签）；
+- **字符归一化**：Unicode NFKC 归一化，移除零宽字符与控制字符，压缩连续空白；
+- **字段标准化**：DOI 去除 `https://doi.org/` 前缀并 casefold；年份从日期或日期时间中提取四位年份；关键词按 `;｜` 或双空格切分并去重保序；
+- **标签映射**：`clc_code` 校验为 `R[0-9]+(.[0-9]+)*` 形式，并回溯到映射表中最具体的已有类别，无法映射则拒绝；
+- **判重策略**：基于 DOI、标题+来源、模型输入三重判重，使用并查集分组；同组保留最完整记录并用其余记录补齐空字段，记录 `provenance`；
+- **标签冲突隔离**：同组若出现多个不同标签，整组隔离到 `label_conflicts.jsonl`，从不猜测 ground truth；
+- **质量标记**：缺失摘要 / 关键词、疑似截断摘要、缺失年份 / DOI / 来源、仅标题短文本等标记写入 `quality_flags`；
+- **可追溯性**：每条记录保留 `source_file`、`source_line`、`original_uid`、`clc_code_raw`、`label_source`，质量报告含输入文件 SHA256 与数据集 SHA256 指纹。
+
 ## 模型训练与评估
 
 训练前请先安装离线依赖，并准备本地预训练模型或允许 Transformers 下载模型。训练会保存验证集 Macro-F1 最佳的 checkpoint。
@@ -229,6 +313,19 @@ python -m model.train \
 ```
 
 支持的 `--model-type` 为 `medbert`、`macbert` 和 `qwen_embedding`。显存不足时可减小 `--batch-size`，并通过 `--grad-accumulation` 保持有效批量大小。类别不平衡实验可增加 `--use-class-weights`。
+
+### 训练细节
+
+`model/train.py` 的训练流程：
+
+- **优化器**：AdamW（`lr=2e-5`，`weight_decay=0.01`），线性预热调度；
+- **混合精度**：CUDA 环境启用 AMP（`GradScaler`），CPU 自动关闭；
+- **梯度累积**：`--grad-accumulation` 在不增加显存的前提下保持有效批量大小；
+- **梯度裁剪**：`clip_grad_norm_` 上限 1.0，防止梯度爆炸；
+- **类别权重**：`--use-class-weights` 时按 `labels.json` 的 `class_weights` 重写 `cross_entropy` 权重（Qwen embedding 分类器除外）；
+- **模型类型**：`medbert` / `macbert` 走 `AutoModelForSequenceClassification`；`qwen_embedding` 走自定义 `QwenEmbeddingClassifier`（保存 encoder 与分类头）；
+- **Checkpoint 内容**：模型权重、Tokenizer、`labels.json`（含 `id2label` / `label2id` / `class_weights`）、`training_config.json`（含全部超参与最佳指标）；
+- **选择标准**：每个 epoch 评估验证集，保存 `f1_macro` 最优 checkpoint，并写入 `results/<run_name>_history.json`。
 
 评估已有 checkpoint：
 
@@ -268,7 +365,7 @@ python run_crawl.py --cats R51 R52 R54 --limit 30
 python run_crawl.py --cats R51 --limit 30 --no-detail
 ```
 
-采集结果默认按类目写入 `data/raw/R*.jsonl`，并生成合并文件。采集页面结构或登录状态变化时，需要更新 `crawler/` 中的解析逻辑或浏览器会话。
+采集结果默认按类目写入 `data/raw/R*.jsonl`，并生成合并文件。采集页面结构或登录状态变化时，需要更新 `crawler/` 中的解析逻辑或浏览器会话。`config.py` 的 `CRAWLER_CONFIG` 定义了请求随机间隔（4–8 秒）、单条重试次数（3）、`headless=False`（知网检测无头浏览器会触发验证码）等默认参数。
 
 ## 离线流水线编排
 
@@ -279,6 +376,19 @@ academic-pipeline --config config/pipeline.example.json --prepare-data --train-i
 ```
 
 示例配置展示的是通用脚本协议，接入前应将其中命令和产物路径改为实际可执行入口。
+
+## 全局配置
+
+`config.py` 集中维护所有路径与常量，避免硬编码：
+
+| 配置块 | 关键字段 |
+| --- | --- |
+| `CRAWLER_CONFIG` | `target_total=3000`、`min_categories=100`、`request_interval=(4,8)`、`headless=False`、`campus_network=True` |
+| `MODEL_CONFIG` | `max_length=512`、`batch_size=8`、`epochs=20`、`learning_rate=2e-5`、`deep_model=medbert_v20` |
+| `AGENT_CONFIG` | `top_k=5`、`confidence_threshold=0.6` |
+| `WEB_CONFIG` | `host=0.0.0.0`、`port=8000` |
+
+`ensure_dirs()` 会在首次运行时创建 `data/`、`raw/`、`processed/`、`model/`、`checkpoints/`、`results/`、`agent/`、`crawler/` 等必需目录。
 
 ## 测试与代码检查
 
@@ -302,11 +412,17 @@ Linux / macOS：
 ACADEMIC_REAL_MODEL_TESTS=1 pytest -m real_model
 ```
 
+测试覆盖工作流集成、文档解析、后端 Web 接口、MedBERT 真实模型冒烟、预处理上游、Team 集成等，`tests/conftest.py` 提供共享 fixture。`pyproject.toml` 配置了 `pytest` 测试路径与 `real_model` 标记，`ruff` 目标版本 `py310`、行长 100。
+
 ## 项目结构
 
 ```text
 .
 ├── agent/          # LangGraph 工作流、工具、模型适配器与统一结果协议
+│   ├── tools/      # 工作流节点：文本/文档/分类/候选/类别查询等
+│   ├── integrations/  # MedBERT 后端、Team 契约与预处理器
+│   ├── data/       # 演示分类器用的类别与标签 JSON
+│   └── schemas.py  # AgentResult 等所有 Pydantic 协议
 ├── backend/        # FastAPI 接口、SSE 流式响应与静态前端入口
 ├── crawler/        # 知网采集与 CLC 类目处理
 ├── preprocess/     # 清洗、去重、划分、统计和数据验收
@@ -318,6 +434,7 @@ ACADEMIC_REAL_MODEL_TESTS=1 pytest -m real_model
 ├── docs/           # 接口协议、实现说明和 JSON Schema
 ├── examples/       # CLI、模型脚本和后端集成示例
 ├── tests/          # 单元测试、集成测试与真实模型冒烟测试
+├── config.py       # 全局路径与常量配置
 ├── run_crawl.py    # 数据采集入口
 └── run_preprocess.py # 数据处理入口
 ```
@@ -327,6 +444,8 @@ ACADEMIC_REAL_MODEL_TESTS=1 pytest -m real_model
 - 当前 Agent 是确定性的工具工作流，没有调用外部 LLM，也不需要 API Key；
 - PDF 依赖文本层提取，扫描版 PDF 未集成 OCR；
 - 文件上传限制为 10 MiB，支持 TXT、PDF 和 DOCX；
+- 文本输入限制：最少 10 字符，最多 200,000 字符（`AgentConfig`）；
+- PDF 最多 100 页，DOCX 解压后最多 50 MiB、2000 个条目，防止异常文档耗尽资源；
 - 默认模型置信度阈值为 0.6，低置信度结果应由人工结合候选类别复核；
 - `model/checkpoints/` 默认被 Git 忽略，部署时需单独准备完整 checkpoint；
 - 分类结果用于文献组织与实验演示，不应替代医学诊断或临床决策。
@@ -336,5 +455,6 @@ ACADEMIC_REAL_MODEL_TESTS=1 pytest -m real_model
 - `docs/integration.md`：Agent、模型和后端的集成协议；
 - `docs/implementation.md`：工作流与模型适配层实现说明；
 - `docs/member5-integration.md`：Web 后端使用的 ToolResult 协议；
+- `docs/agent-result.schema.json` / `docs/model-output.schema.json` / `docs/tool-result.schema.json`：JSON Schema 定义；
 - `preprocess/DATASET_REPORT_2026-09-03.md`：数据集构建报告；
 - `docs/validation.md`：项目验证说明。
